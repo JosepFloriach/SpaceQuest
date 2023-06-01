@@ -21,12 +21,7 @@ public class TouchControls : MonoBehaviour
     }
 
     private void Update()
-    {
-        if (cockpit == null)
-        {
-            return;
-        }
-
+    {    
         if (thrustingForward)
         {
             cockpit.ThrustForward();

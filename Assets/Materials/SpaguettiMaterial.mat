@@ -60,7 +60,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fade: 0
+    - _Fade: 0.027
     - _Grow: 0
     - _Hardness: 0
     - _NoiseScale: 20.2
