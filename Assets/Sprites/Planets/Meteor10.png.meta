@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,8 +69,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,30 +130,22 @@ TextureImporter:
     sprites: []
     outline: []
     physicsShape:
-    - - {x: 231, y: -528}
-      - {x: 313, y: -511}
-      - {x: 366, y: -135}
-      - {x: 333, y: -36}
-      - {x: 478, y: 243}
-      - {x: 478, y: 302}
-      - {x: 452, y: 325}
-      - {x: 467, y: 432}
-      - {x: 354, y: 552}
-      - {x: 331, y: 552}
-      - {x: 223, y: 523}
-      - {x: -92, y: 552}
-      - {x: -232, y: 552}
-      - {x: -387, y: 379}
-      - {x: -453, y: 279}
-      - {x: -478, y: -229}
-      - {x: -478, y: -304}
-      - {x: -440, y: -378}
-      - {x: -355, y: -524}
-      - {x: -177, y: -552}
-      - {x: -103, y: -552}
-      - {x: -62, y: -492}
-      - {x: -45, y: -402}
-      - {x: 125, y: -546}
+    - - {x: 125, y: 115}
+      - {x: 92, y: 148}
+      - {x: 60, y: 140}
+      - {x: -63, y: 146}
+      - {x: -122, y: 75}
+      - {x: -126, y: -79}
+      - {x: -94, y: -140}
+      - {x: -32, y: -147}
+      - {x: -17, y: -128}
+      - {x: -15, y: -101}
+      - {x: 33, y: -145}
+      - {x: 82, y: -137}
+      - {x: 97, y: -40}
+      - {x: 90, y: -11}
+      - {x: 128, y: 75}
+      - {x: 118, y: 81}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 1537655665

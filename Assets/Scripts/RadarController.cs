@@ -20,7 +20,7 @@ public class RadarController : MonoBehaviour
 
     private class RadarMinature
     {
-        public Interactable type;
+        public IInteractable type;
         public GameObject miniatureObject;
     }
 
@@ -42,7 +42,7 @@ public class RadarController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        var interactable = other.GetComponent<Interactable>();
+        var interactable = other.GetComponent<IInteractable>();
         if (interactable != null)
         {            
             Sprite miniatureSprite = GetMiniature(other.gameObject);

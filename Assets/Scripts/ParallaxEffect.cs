@@ -16,6 +16,10 @@ public class ParallaxEffect : MonoBehaviour
     [SerializeField] private List<ParallaxLayerSetup> singleElements;
 
     private Dictionary<Transform, ParallaxLayerSetup> singleElementsMap = new();
+    private List<Vector2> spriteSizes = new();
+    private Vector3 prevCameraPosition;
+    private Transform cameraTransform;
+    
 
     public void AddSingleElement(Transform transform, float speedFactor)
     {
@@ -30,10 +34,6 @@ public class ParallaxEffect : MonoBehaviour
     {
         singleElementsMap.Remove(transform);
     }
-
-    private Vector3 prevCameraPosition;
-    private Transform cameraTransform;
-    private List<Vector2> spriteSizes;
 
     private void Start()
     {

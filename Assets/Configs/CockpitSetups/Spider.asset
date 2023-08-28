@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 237d1d6254c897045aaa8f42dd3c005c, type: 3}
+  m_Name: Spider
+  m_EditorClassIdentifier: 
+  Id: Spider
+  LowResolutionSprite: {fileID: 0}
+  HighResolutionSprite: {fileID: 21300000, guid: de293c5b0d1edf04ea97671430a34a2d,
+    type: 3}
+  GemsCost: 4
+  VerticalThrusterPower: 7
+  RotationThrusterPower: 5
+  MaxSpeed: 7
+  MaxFuelCapacity: 6
+  MaxQuantumEnergy: 1
+  VerticalThrusterPowerFactor: 1
+  MaxFuelCapacityFactor: 25
+  RotationPowerFactor: 8
+  MaxSpeedFactor: 15
+  MaxQuantumEnergyFactor: 100
+  QuantumRotationPowerFactor: 100

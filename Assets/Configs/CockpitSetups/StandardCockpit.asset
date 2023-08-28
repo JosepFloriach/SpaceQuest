@@ -12,19 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237d1d6254c897045aaa8f42dd3c005c, type: 3}
   m_Name: StandardCockpit
   m_EditorClassIdentifier: 
-  TotalMechanicalPoints: 50
-  AvailableMechanicalPoints: 0
-  InitialDirection: 90
+  Id: 
+  LowResolutionSprite: {fileID: 0}
+  HighResolutionSprite: {fileID: 0}
+  GemsCost: 0
   VerticalThrusterPower: 3
   RotationThrusterPower: 4
-  MaxFuelCapacity: 2
   MaxSpeed: 3
+  MaxFuelCapacity: 2
   MaxQuantumEnergy: 4
-  ShipPrefab: {fileID: 5978672544307930898, guid: 01d2c95d5cbcecc43b04fd47fd18e6a9,
-    type: 3}
   VerticalThrusterPowerFactor: 1
-  MaxFuelCapacityFactor: 5000
-  RotationPowerFactor: 6
+  MaxFuelCapacityFactor: 25
+  RotationPowerFactor: 8
   MaxSpeedFactor: 15
   MaxQuantumEnergyFactor: 100
   QuantumRotationPowerFactor: 100

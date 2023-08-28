@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: e8d057a2ce397ef4faba58278f69a07b, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 3843708862464
+    m_Localized: Maximum Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3974982189056
+    m_Localized: 'Acceleration
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4061972054016
+    m_Localized: 'Rotation power
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4147821068288
+    m_Localized: 'Fuel deposit
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4207828975616
+    m_Localized: Quantum deposit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5271131441737728
+    m_Localized: Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5271277554511872
+    m_Localized: Reset progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5271628156383232
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510888767762432
+    m_Localized: Very low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510918929002496
+    m_Localized: Low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510942295470080
+    m_Localized: Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510967612289024
+    m_Localized: High
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510994946568192
+    m_Localized: Very high
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5511018380144640
+    m_Localized: Ultra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8089016883097600
+    m_Localized: 'This game has been ideated, designed, and developed completely
+      by Josep Floriach as a side project on his spare time. Its main purpose is
+      to serve as porfolio, so it does not have the quality and polishment of a comercial
+      game. Art and sounds are from the following free resources:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8785166862790656
+    m_Localized: Stops the ship instantly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8785462993235968
+    m_Localized: Refills the fuel deposit a little bit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8899162320285696
+    m_Localized: Refills the quantum energy deposit a little bit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8899328867708928
+    m_Localized: Immedialely increments a little bit the speed of the ship.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8899617649733632
+    m_Localized: Immedialely decrements a little bit the speed of the ship.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8899728756846592
+    m_Localized: Provides randomly an effect from the other pickups.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8900202809667584
+    m_Localized: Get three of them in each level to complete it. It is also the main
+      currency. Use it to buy ships.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8900533836722176
+    m_Localized: It will shoot and destroy one or several asteroids when the ship
+      goes over it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8900724199403520
+    m_Localized: Start and end point of the level.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17123465209720832
+    m_Localized: ContinuePathTraveling
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

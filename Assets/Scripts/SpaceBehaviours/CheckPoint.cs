@@ -9,6 +9,7 @@ public class CheckPoint : InteractableBase
     private void Awake()
     {
         checkPointManager = FindObjectOfType<CheckPointManager>();
+        ReferenceValidator.NotNull(checkPointManager);
     }
 
     protected override void OnStart()
@@ -16,7 +17,7 @@ public class CheckPoint : InteractableBase
         checkPointManager.AddCheckPoint(this);
     }
 
-    public override void StartInteraction(Player player, PhysicsBody cockpit, Transform transform)
+    public override void StartInteraction(Player player, IPhysicsBody cockpit, Transform transform)
     {
         checkPointManager.CurrentCheckPoint = this;
     }

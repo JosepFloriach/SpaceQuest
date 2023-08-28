@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: UI_Buttons_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 9d03e505e00ae4c48bd2a0ec8097d62f, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 5492486506463232
+    m_Localized: 8902a151cc3a84346953ecfcb9cf7976
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5493034903322624
+    m_Localized: 4d16fbe5c7886f44f9451c50e6068c6b[Button_buy_eng_v2]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5493229888126976
+    m_Localized: fccd4c738e4f7164fbf890db102c9265[Button_select_eng_v2]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10966264573210624
+    m_Localized: 5599f852a7deda4478b9a8f520cfa92d[Button_text_exitlevel_eng]
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

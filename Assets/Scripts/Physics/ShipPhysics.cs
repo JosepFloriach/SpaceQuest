@@ -5,7 +5,6 @@ using UnityEngine;
 public class ShipPhysics : PhysicsBodyBase
 {
     private Cockpit cockpit;
-    private float prevSpeed;
 
     public ShipPhysics(Cockpit cockpit, Transform transform)
         : base(transform)
@@ -15,11 +14,33 @@ public class ShipPhysics : PhysicsBodyBase
 
     protected override void PreUpdateRotation()
     {
+        if (!IsFrozen)
+        {
+            /*if (GetLinearForce("PlanetGravity") == null)
+            {
+                ForceRotationOutOfGravity();
+            }
+            else
+            {
+                ForceRotationOnGravityField();
+            }*/
+            ForceRotationOutOfGravity();
+        }
+    }
+
+    private void ForceRotationOnGravityField()
+    {
+        ForceRotationToVelocity(false);
+        ForceRotationToInverseVelocity(false);
+    }
+
+    private void ForceRotationOutOfGravity()
+    {
         if (cockpit.ThrustingBackward)
         {
-            if (GetLinearForce("VerticalThruster").magnitude > LinearVelocity.magnitude)
+            if (GetLinearForce("VerticalThruster").Direction.magnitude > LinearVelocity.magnitude)
             {
-                float dotProduct = Vector2.Dot(GetLinearForce("VerticalThruster").normalized, LinearVelocity.normalized);
+                float dotProduct = Vector2.Dot(GetLinearForce("VerticalThruster").Direction.normalized, LinearVelocity.normalized);
                 bool sameDirection = dotProduct > 0;
                 if (sameDirection)
                 {
@@ -32,7 +53,7 @@ public class ShipPhysics : PhysicsBodyBase
             }
             else
             {
-                if (Vector2.Dot(GetLinearForce("VerticalThruster").normalized, LinearVelocity.normalized) > 0)
+                if (Vector2.Dot(GetLinearForce("VerticalThruster").Direction.normalized, LinearVelocity.normalized) > 0)
                 {
                     ForceRotationToInverseVelocity(true);
                 }
@@ -44,7 +65,7 @@ public class ShipPhysics : PhysicsBodyBase
         }
         else
         {
-            if (Vector2.Dot(LinearVelocity.normalized, cockpit.transform.up) > 0)
+            if (Vector2.Dot(LinearVelocity.normalized, cockpit.transform.up) >= 0)
             {
                 ForceRotationToVelocity(true);
             }
@@ -53,6 +74,5 @@ public class ShipPhysics : PhysicsBodyBase
                 ForceRotationToInverseVelocity(true);
             }
         }
-
     }
 }

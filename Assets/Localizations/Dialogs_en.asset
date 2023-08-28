@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogs_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 62e60c34027284645bbb7e266596e4e5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 12153401344
+    m_Localized: Welcome to StellarCorp cadet. The biggest trading corporation in
+      the galaxy since 32th century. I will be responsible for your onboarding and
+      flight instruction, so you can be a productive member as soon as possible.
+      I hope you are better than the last contender. The rescue unit is still picking
+      up pieces close to Orionis system.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 466291666944
+    m_Localized: Let's start with something basic. The ship needs some power to be
+      able to move through the space. Keep pressed the left button on your mouse
+      to enable the rear thrusters. This will produce a force that will push your
+      ship forward. The longer you press, the faster you travel. Move some meters
+      forward.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4982365892608
+    m_Localized: 'Good job. It seems you are smart enough to accelerate the ship.
+      Impressive. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5216328364032
+    m_Localized: As I expect you to know, in the outer space there is almost no physics
+      resistance. At least not naturally. That means that if you want to reduce your
+      speed, you will need to produce a counter-force towards your on-going direction.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5483488751616
+    m_Localized: 'Which brings us to our next lesson. The front thrusters allows
+      you to create this counter-force. As said, this is useful if you want to reduce
+      your speed, or even if you want to travel  backwards. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5694013452288
+    m_Localized: 'Now, do you see those rocks in front of you? Bad things will happen
+      if your ship collides with them. I set up your ship speed slow as hell, so
+      you have time to react. Keep pressed the right button in your mouse to enable
+      the front thruster. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6012197548032
+    m_Localized: Now! Enable the front thrusters! (Right-click).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6218070765568
+    m_Localized: You managed to not explode your ship. It's a good start. Let's go
+      with the next lesson. Life would be boring if we were able to move just in
+      one line. That's why we live in two dimensions. There are some legends about
+      an alien race living in three dimensions. But I don't belive such tales.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6793395056640
+    m_Localized: Luckily for us, we live in the real world which is setup in two
+      dimensions. That's why we created the Gyroscope. The Gyroscope allows us to
+      rotate the ship. Press A or D to rotate left or right. Have in mind, though,
+      that you only can rotate if you are moving your ship.  Move your ship to the
+      right so you can leave this asteroid belt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7407587962880
+    m_Localized: It seems you are not so useless as the previous candidates. Let's
+      put in practice the basic movement of the ship. There is another space station
+      nearby. Find it to end your first day of training.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7782122532864
+    m_Localized: You are now ready to manage and control some systems of your ship.
+      I enabled the cockpit indicators. You will see one of them in the top left
+      of your screen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8203364872192
+    m_Localized: This is the fuel indicator. As you can see you are almost out of
+      fuel. If you run out of it while moving your ship, you won't be able to stop.
+      Which means you will end potentially crushed onto the surface of a satellite
+      or meteorite.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8728290406400
+    m_Localized: Luckyly, you have a fuel can close to you. When you move with your
+      ship over one of those, your fuel deposit will be refilled a little bit, allowing
+      you to survive another day. Pick it now to refill your fuel deposit. Then,
+      approach to the station to end your first day of training. Tomorrow I will
+      teach you on how to use gravity force produced by celestial bodies, so you
+      can accelerate your ship without wasting a gallon of fuel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9463107301376
+    m_Localized: 'This is your first official mission. An easy one if you ask me.
+      But you never know with fresh meat like you. An unkonwn artifact entered in
+      our system five days ago and it has been orbiting around Seraphis-8 since then. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9872320376832
+    m_Localized: A known collector has hired us to retrieve it. The reward is not
+      as juicy as I would expect from a person like this. But it is what is is. So,
+      you know what to do. Find the artifact and bring it back here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2892670584631296
+    m_Localized: Welcome back cadette. Today you are gonna learn some topic more
+      advanced. I assume you know how to control your ship. Let's talk about how
+      to safe fuel by taking advantage of gravity produced by planets.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2893586519961600
+    m_Localized: Any object in the universe is producing an attracting force towards
+      its center. Even a simple apple. Of course, the bigger the object, the stronger
+      the force. That's what we call gravity. Imagine how strong is the gravity produced
+      by a planet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2894846384025600
+    m_Localized: Did you noticed how I approach the planet sideways? This is very
+      important. Because if you go upfront, the gravity will pull your ship very
+      fast and you won't be able to control it. But if you are able to approach properly,
+      you can control your orbit trajectory by facing your ship a little bit towards
+      the planet. This will give you some free speed due gravity acceleration.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2898131941732352
+    m_Localized: Pay attention how the ship orbites around the planet and how I scape
+      from the orbit at the right moment. Next time you will do it yourself.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3720794964635648
+    m_Localized: Now, observe your cockpit. This is the gravity sensor and it will
+      help you to know when your ship is being pulled by a strong force like gravity.
+      The bigger the force, the stronger it will blink.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4295551632195584
+    m_Localized: First of all, we need to approach your ship to the planet in front
+      of you. Since this is a dangerous manoeuvre, I will take controll of all the
+      systems. Pay attention how I approach to the planet, because it's extremely
+      important.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4485305506082816
+    m_Localized: We are ready to scape from the orbit. Notice how I use the Gyroscope
+      to exit from the gravitational field.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4492817311608832
+    m_Localized: So, now it's your turn. There is another planet in front of you
+      with a very similar gravity field. Orbitate around it just as I showed you.
+      Have in mind that you need to approach with the appropiate speed. Otherwise
+      the Gravity Force will be stronger and you will get pull to the planet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4643948515999744
+    m_Localized: You are approaching into a very tight formation of asteroids. When
+      you are in a delicate situation like this one, you can use the Warp Engine.
+      The Warp Engine will allow you to slow down the time and  be much more precise
+      in your movement. Keep pressed space to enable it and go trough those rocks.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4644873389391872
+    m_Localized: 'I enabled another system from your cockpit. This is the Quantum
+      Energy deposit. Quantum Energy allows you to use the Warp Engine. Once you
+      are out of it you won''t be able to use it until you refill it. So use Warp
+      Engine smartly. As you can see, you are almost out of it because of your previous
+      manoeuvre. You can refill it with the Quantum Energy can you have nearby. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4645600744620032
+    m_Localized: Get it, and head to the station. Here concludes your training. Tomorrow
+      you will take your first real mission. There is no margin for errors from now
+      on. Any mistake you make is affecting StellarCorp. And you don't want to piss
+      us off.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9175320823738368
+    m_Localized: Are you deaf? I told you to not come back until you don't have the
+      artifact. I don't want to see you again until you don't have it.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

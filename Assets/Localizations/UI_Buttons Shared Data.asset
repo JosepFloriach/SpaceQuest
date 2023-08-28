@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI_Buttons Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI_Buttons
+  m_TableCollectionNameGuidString: 9d03e505e00ae4c48bd2a0ec8097d62f
+  m_Entries:
+  - m_Id: 5492486506463232
+    m_Key: MainMenu_v2/Canvas/MainMenu/Default/Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5493034903322624
+    m_Key: MainMenu_v2/Canvas/MainMenu/Garage/Bot/Selectors/ShipSelector/ButtonBuy/Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5493229888126976
+    m_Key: MainMenu_v2/Canvas/MainMenu/Garage/Bot/Selectors/ShipSelector/ButtonSelect/Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10966264573210624
+    m_Key: InGame_UI/ExitButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17111764280160256
+    m_Key: T2/Map/GameplayEvents/TutorialGravity
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items:
+    - rid: 346613673359573021
+  m_KeyGenerator:
+    rid: 7847175570186567703
+  references:
+    version: 2
+    RefIds:
+    - rid: 346613673359573021
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 5492486506463232
+          m_TableCodes:
+          - en
+          - es
+        - m_KeyId: 5493034903322624
+          m_TableCodes:
+          - en
+          - es
+        - m_KeyId: 5493229888126976
+          m_TableCodes:
+          - en
+          - es
+        - m_KeyId: 10966264573210624
+          m_TableCodes:
+          - en
+          - es
+        m_TypeString: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    - rid: 7847175570186567703
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1688031488200

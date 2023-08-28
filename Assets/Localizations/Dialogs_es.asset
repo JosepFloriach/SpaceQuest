@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogs_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 62e60c34027284645bbb7e266596e4e5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 12153401344
+    m_Localized: "Bienvenido a StellarCorp recluta. La corporaci\xF3n de comercio
+      m\xE1s grande de la galaxia desde el siglo 32. Ser\xE9 el responsable de tu
+      proceso de integraci\xF3n e instrucci\xF3n de vuelo, para que puedas ser un
+      miembro productivo lo antes posible. Espero que seas bastante mejor que el
+      \xFAltimo aspirante. La unidad de rescate todav\xEDa est\xE1 recogiendo sus
+      trozos cerca del sistema Orionis."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 466291666944
+    m_Localized: "Empecemos con algo sencillo. La nave necesita  energ\xEDa para
+      poder moverse por el espacio. Mant\xE9n pulsado el bot\xF3n izquierdo del mouse
+      para activar los propulsores traseros. Esto crear\xE1 una fuerza que empujar\xE1
+      tu nave hacia delante. Cuanto m\xE1s tiempo mantengas pulsado, m\xE1s r\xE1pido
+      viajar\xE1s. Mu\xE9vete unos metros hacia delante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4982365892608
+    m_Localized: Buen trabajo. Eres lo bastante bueno como para acelerar la nave.
+      Impresionante.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5216328364032
+    m_Localized: "Imagino que sabr\xE1s que en el espacio no hay casi resistencia
+      f\xEDsica. Al menos naturalmente. Eso significa que si quieres reducir la velocidad
+      tendr\xE1s que producir una fuerza opuesta hacia la direcci\xF3n a la que est\xE1s
+      viajando."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5483488751616
+    m_Localized: "Lo que nos lleva a la siguiente lecci\xF3n. Los propulsores delanteros
+      te permitir\xE1n crear esta fuerza opuesta. Como he dicho, esto es \xFAtil
+      si quieres reducir la velocidad o incluso si quieres ir marcha atr\xE1s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5694013452288
+    m_Localized: "Bien. Ves esas rocas delante tuyo? No creo que se muestren amables
+      contigo si chocas contra ellas. He configurado la velocidad de tu nave a una
+      velocidad rid\xEDcula para que tengas tiempo a reaccionar. Mant\xE9n apretado
+      el bot\xF3n derecho del mouse para activar el propulsor delantero."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6012197548032
+    m_Localized: "Ahora! Activa los propulsores delanteros! (Bot\xF3n derecho del
+      mouse)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6218070765568
+    m_Localized: "Has conseguido no mandar tu nave a la mierda. Es un buen comienzo.
+      Vayamos con la siguiente lecci\xF3n. La vida ser\xEDa bastante aburrida si
+      s\xF3lo pudi\xE9ramos movernos en una sola direcci\xF3n. Es por eso que vivimos
+      en dos dimensiones. He o\xEDdo algunas leyendas sobre una raza alien\xEDgena
+      que es capaz de ver i vivir en tres dimensiones. Pero no creo en esas tonter\xEDas. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6793395056640
+    m_Localized: "Afortunadamente, vivimos en el mundo real, creado en dos dimensiones.
+      Es por eso que inventamos el Giroscopio. El Giroscopio nos permite rotar la
+      nave. Pulsa A o D para rotar la nave la izquierda o derecha respectivamente.
+      Ten en cuenta que s\xF3lo ser\xE1s capaz de rotar si la nave se est\xE1 moviendo.
+      Ahora, dirige tu nave a la derecha para poder dejar este cintur\xF3n de asteroides."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7407587962880
+    m_Localized: "Parece que no eres tan in\xFAtil como los anteriores reclutas.
+      Vamos a poner en pr\xE1ctica el movimiento b\xE1sico de la nave. Hay otra estaci\xF3n
+      espacial en las proximidades. Encu\xE9ntrala para terminar tu primer d\xEDa
+      de entrenamiento."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7782122532864
+    m_Localized: "Est\xE1s ya listo para gestionar y controlar algunos sistemas de
+      tu nave. He activado los indicadores de cabina. Ver\xE1s uno de ellos en la
+      esquina superior izquierda de la pantalla."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8203364872192
+    m_Localized: "Este es el indicador de combustible. Como puedes ver, est\xE1 casi
+      agotado. Si te quedas sin combustible mientras tu nave est\xE1 en movimiento
+      no ser\xE1s capaz de reducir la velocidad. Lo que significa que terminar\xE1s
+      siendo un revoltijo de chatarra en la superf\xEDcie de algun planeta o meteorito."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8728290406400
+    m_Localized: "Por suerte, hay un contenedor de combustible cerca. Cuando pases
+      por encima, el dep\xF3sito de tu nave se rellenar\xE1 un poco, permiti\xE9ndote
+      sobrevivir un d\xEDa m\xE1s. Rec\xF3gelo, y acto seguido dir\xEDgete a la estaci\xF3n
+      para terminar tu primer d\xEDa de entrenamiento. Ma\xF1\xE1na te ense\xF1ar\xE9
+      como usar la gravedad producida por los planetas, para que puedas acelerar
+      la nave sin tener que malgastar ni un litro de comustible."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9463107301376
+    m_Localized: "\xC9sta es tu primera misi\xF3n oficial. Bastante sencilla en mi
+      opini\xF3n. Pero nunca se sabe con novatos como t\xFA. Un arterfacto no identificado
+      entr\xF3 en las immediaciones de nuestro sistema hace cinco d\xEDas. Ha estado
+      orbitando alrededor de Seraphis-8 desde entonces."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9872320376832
+    m_Localized: "Un conocido collecionista nos ha contratado para recuperarlo. La
+      recompensa no es tan suculenta como cabr\xEDa esperar de una persona de renombre
+      como \xE9l. Pero es lo que hay. As\xED que ya sabes lo que hay que hacer. Encuentra
+      el artefacto y tr\xE1elo aqu\xED de vuelta. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2892670584631296
+    m_Localized: "Bienvenido de nuevo recluta. Hoy vas a aprender temas un poco m\xE1s
+      avanzados. Asumo que ya sabes controlar la nave. Hablemos ahora de como no
+      malgastar combustible, haciendo uso de la gravedad."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2893586519961600
+    m_Localized: "Cualquier objeto del universo produce una fuerza de atracci\xF3n
+      hacia su centro. Incluso una simple manzana. Cuanto m\xE1s grande sea el objeto,
+      mayor es esta fuerza de atracci\xF3n. Es lo que llamamos gravedad. Imagina
+      lo potente que es la fuerza producida por algo tan grande como un planeta. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2894846384025600
+    m_Localized: "Te has fijado como me he aproximado al planeta de lado? Esto es
+      importante. Porque si lo haces de frente, la gravedad arrastrar\xE1 r\xE1pidamente
+      tu nave y no podr\xE1s contrarla. Pero si te aproximas correctamente, podr\xE1s
+      controlar la trayectoria de la \xF3rbita, y podr\xE1s encararte al planeta
+      ligeramente. Esto te permitir\xE1 ganar velocidad gracias a la aceleraci\xF3n
+      gravitacional."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2898131941732352
+    m_Localized: "Observa como la nave orbita alrededor del planeta y como escapo
+      de la \xF3rbita en el momento adecuado. La pr\xF3xima vez te tocar\xE1 hacerlo
+      a t\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3720794964635648
+    m_Localized: "Observa el cuadro de mando de tu nave. Esto es el sensor de gravedad
+      y te ayudar\xE1 a saber cuando tu nave est\xE1 siendo arrastrada por una gran
+      fuerza. Cuando m\xE1s grande sea esta fuerza, m\xE1s r\xE1pido parpadear\xE1."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4295551632195584
+    m_Localized: "Antes que nada, aproxim\xE9monos al planeta cercano. Como es una
+      maniobra bastante peligrosa tomar\xE9 el control de la nave. Observa con atenci\xF3n
+      como me aproximo al planeta, porque es extremadamente importante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4485305506082816
+    m_Localized: "Estamos listo para salir de la \xF3rbita. Mira como uso el Giroscopio
+      para escapar del campo gravitacional."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4492817311608832
+    m_Localized: "Tu turno. Hay otro planeta en frente con un campo gravitacional
+      muy similar. Orbita alrededor tal como te acabo de mostrar. Ten en cuenta que
+      tienes que aproximarte con la velocidad apropiada. Sino, la fuerza de gravedad
+      ser\xE1 m\xE1s fuerte y te arrastrar\xE1 al planeta."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4643948515999744
+    m_Localized: "Te est\xE1s aproximando a una formaci\xF3n de asteroides bastante
+      estrecha. Cuando te encuentres en una situaci\xF3n as\xED, puedes usar el Motor
+      de Curvatura. El Motor de Curvatura te permitir\xE1 relantizar el tiempo y
+      ser mucho m\xE1s preciso en tus maniobras. Mant\xE9n apretado espacio para
+      activarlo, y pasa a trav\xE9s de esas rocas. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4644873389391872
+    m_Localized: "He activado otro sistema de tu cuadro de mandos. Esto es el dep\xF3sito
+      de Energ\xEDa Cu\xE1ntica. La Energ\xEDa Cu\xE1ntica te permite activar el
+      Motor de Curvatura. Cuando te quedes sin, no podr\xE1s usarlo hasta que lo
+      rellenes de nuevo. As\xED que \xFAsalo inteligentemente. Como puedes ver, est\xE1
+      casi agotado. Puedes rellenarlo con el contenedor de Energ\xEDa Cu\xE1ntica
+      que tienes cerca."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4645600744620032
+    m_Localized: "C\xF3gelo y ve hacia la estaci\xF3n espacial. Aqu\xED acaba tu
+      entrenamiento. Ma\xF1ana te embarcar\xE1s en tu primera misi\xF3n de verdad.
+      Aqu\xED ya no hay margen de error. Cualquier cagada que hagas, afectar\xE1
+      a StellarCorp. Y no quieres que nos cabreemos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9175320823738368
+    m_Localized: "\xBFEst\xE1s sordo? Te he dicho que no vuelvas hasta que no tengas
+      el artefacto. No quiero volver a verte hasta que no lo tengas."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -30,10 +30,19 @@ public class OverlayController : MonoBehaviour
 
     private void Start()
     {
+        Disable();
+    }
+
+    private void OnEnable()
+    {
         PlanetGravity.EnteredGravityField += OnGravityFieldEntered;
         PlanetGravity.ExitedGravityField += OnGravityFieldExited;
-        //UpdateDirectionMarkerPosition();
-        Disable();
+    }
+
+    private void OnDisable()
+    {
+        PlanetGravity.EnteredGravityField -= OnGravityFieldEntered;
+        PlanetGravity.ExitedGravityField -= OnGravityFieldExited;
     }
 
     private void OnGravityFieldEntered(object sender, GravityFieldEventArgs args)

@@ -15,7 +15,8 @@ public class ParameterUIController : MonoBehaviour
 
     private void Update()
     {
-        for(int idx = 0; idx < ticks.Count; ++idx)
+        // TODO: There is no need to put this in the update. We can subscribe to some event to get some performance.
+        for (int idx = 0; idx < ticks.Count; ++idx)
         {
             if (currentValue > idx)
             {

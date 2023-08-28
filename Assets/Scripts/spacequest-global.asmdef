@@ -1,0 +1,26 @@
+{
+    "name": "Testingo",
+    "rootNamespace": "",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:626070ea3273cb844a310aa4f53b31fa",
+        "GUID:eec0964c48f6f4e40bc3ec2257ccf8c5",
+        "GUID:e6b484bcbdd2c7841b3f93bf768f25a6",
+        "GUID:57ffe651ab3681341afe011bc8f1c8d1",
+        "GUID:f513e996a6a7271459efe87f721b84fb",
+        "GUID:df380645f10b7bc4b97d4f5eb6303d95",
+        "GUID:21d1eb854b91ade49bc69a263d12bee2",
+        "GUID:84651a3751eca9349aac36a66bba901b",
+        "GUID:d8b63aba1907145bea998dd612889d6b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

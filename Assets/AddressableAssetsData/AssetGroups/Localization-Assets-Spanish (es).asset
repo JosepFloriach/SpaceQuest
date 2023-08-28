@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Spanish (es)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Spanish (es)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 72b5b678ece51f748a5e6d6b108f007f
+  m_SerializeEntries:
+  - m_GUID: 3dd481a086c75954e851e87df084bac9
+    m_Address: Button_text_play_esp_v2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+  - m_GUID: df59f8c201ce30d4abd7a1f2c4953883
+    m_Address: Button_buy_esp_v2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+  - m_GUID: e7155576248a16444853f38d905553af
+    m_Address: Button_select_esp_v2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+  - m_GUID: db23e522bb1e4c7498fe91a94e3f651b
+    m_Address: Button_text_exitlevel_esp
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 8a4395185b7657a4d8f38a2244d05196, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: eeb3a55846a8b3243a8ba33ee65cd440, type: 2}
+    - {fileID: 11400000, guid: cd4496509208b2b4ebba79ba5b2bfb27, type: 2}

@@ -7,6 +7,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3653904934340101235, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bdfa82ab021456d4380ec084576d7200,
+        type: 3}
+    - target: {fileID: 3653904934340101235, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4534626729792296058, guid: 36c276cdf789d814cb71947fa6c63a9a,
         type: 3}
       propertyPath: m_RootOrder
@@ -20,6 +31,11 @@ PrefabInstance:
     - target: {fileID: 4534626729792296058, guid: 36c276cdf789d814cb71947fa6c63a9a,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534626729792296058, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4534626729792296058, guid: 36c276cdf789d814cb71947fa6c63a9a,
@@ -72,35 +88,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4534626729792296058, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4534626729792296061, guid: 36c276cdf789d814cb71947fa6c63a9a,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4f3b63718544289498b5ce0ec9df7c14,
+      objectReference: {fileID: 21300000, guid: bdfa82ab021456d4380ec084576d7200,
         type: 3}
     - target: {fileID: 4534626729792296062, guid: 36c276cdf789d814cb71947fa6c63a9a,
         type: 3}
       propertyPath: m_Name
       value: RefillFuelPickup
       objectReference: {fileID: 0}
+    - target: {fileID: 6567021014371820504, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_Name
+      value: RefillFuelPickup
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36c276cdf789d814cb71947fa6c63a9a, type: 3}
---- !u!1 &7247022719478227238 stripped
+--- !u!1 &98548032286873216 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4534626729792296062, guid: 36c276cdf789d814cb71947fa6c63a9a,
+  m_CorrespondingSourceObject: {fileID: 6567021014371820504, guid: 36c276cdf789d814cb71947fa6c63a9a,
     type: 3}
   m_PrefabInstance: {fileID: 6520264723604026712}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4918504881800273916
+--- !u!114 &1385167090484270152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7247022719478227238}
+  m_GameObject: {fileID: 98548032286873216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88df45142b986f643bba9bc57a2f1dd7, type: 3}
+  m_Script: {fileID: 11500000, guid: e36b49834651ce7498c3d8af9e034019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FuelAmount: 2000
+  PickupEffectDelay: 0.3
+  PercentageAmount: 0.5

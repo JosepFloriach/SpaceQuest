@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class InteractableBase : MonoBehaviour, Interactable
+public abstract class InteractableBase : MonoBehaviour, IInteractable, IReseteable
 {
+    private Transform originalTransform;
 
     public string ID
     {
@@ -16,21 +17,30 @@ public abstract class InteractableBase : MonoBehaviour, Interactable
     {
         ID = Guid.NewGuid().ToString();
         OnStart();
+        originalTransform = transform;
     }
 
     protected virtual void OnStart()
     {
     }
 
-    public virtual void StartInteraction(Player player, PhysicsBody cockpit, Transform transform)
+    public virtual void StartInteraction(Player player, IPhysicsBody cockpit, Transform transform)
     {
     }
 
-    public virtual void ContinueInteraction(Player player, PhysicsBody cockpit, Transform transform)
+    public virtual void ContinueInteraction(Player player, IPhysicsBody cockpit, Transform transform)
     {
     }
 
-    public virtual void EndInteraction(Player player, PhysicsBody cockpit, Transform transform)
+    public virtual void EndInteraction(Player player, IPhysicsBody cockpit, Transform transform)
     {
+    }
+
+    public void Reset()
+    {
+        gameObject.SetActive(true);
+        transform.position = originalTransform.position;
+        transform.rotation = originalTransform.rotation;
+        transform.localScale = originalTransform.localScale;
     }
 }

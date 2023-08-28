@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
 
+[RequireComponent(typeof(Camera))]
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private float minDistance;
@@ -26,15 +27,20 @@ public class CameraController : MonoBehaviour
         player = FindObjectOfType<Player>();
         shipSpawner = FindObjectOfType<ShipSpawner>();
         camera = GetComponent<Camera>();
+        ReferenceValidator.NotNull(player, shipSpawner, camera);
     }
 
-    private void Start()
+    private void OnEnable()
     {
         player.PlayerKilled += OnPlayerKilled;
         shipSpawner.ShipSpawned += OnShipSpawned;
         PlanetGravity.EnteredGravityField += OnGravityFieldEntered;
-        //maxSpeed = cockpit.cockpitSetup.MaxSpeed;
-        //enableFollowing = true;
+    }
+    private void OnDisable()
+    {
+        player.PlayerKilled -= OnPlayerKilled;
+        shipSpawner.ShipSpawned -= OnShipSpawned;
+        PlanetGravity.EnteredGravityField -= OnGravityFieldEntered;
     }
 
     private void Update()
@@ -60,7 +66,7 @@ public class CameraController : MonoBehaviour
         }
         else
         {
-            camera.orthographicSize = Mathf.Clamp(cockpit.PhysicsBody.LinearVelocity.magnitude, minDistance, maxDistance);
+            camera.orthographicSize = Mathf.Clamp(cockpit.IPhysicsBody.LinearVelocity.magnitude, minDistance, maxDistance);
         }*/
     }
 

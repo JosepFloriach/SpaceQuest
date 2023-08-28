@@ -8,10 +8,9 @@ using UnityEngine.Rendering;
 public class Player : MonoBehaviour
 {
     [SerializeField] private bool invencible;
-    [SerializeField] private GameObject shipPrefab;
     [SerializeField] private float waitSecondsOnWinBeforeMovingMainMenu;
-    
-    private Cockpit cockpit;
+
+    private ShipSpawner shipSpawner;
     private Inventory inventory;
 
     public event Action PlayerKilled;
@@ -19,20 +18,35 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        cockpit = GameObject.Instantiate(shipPrefab).GetComponent<Cockpit>();        
         inventory = GetComponent<Inventory>();
+        shipSpawner = GetComponent<ShipSpawner>();
     }
 
-    public int StarsCollected
+    private void Start()
+    {        
+        IsAlive = true;
+    }
+
+    private void OnEnable()
+    {
+        shipSpawner.ShipSpawned += OnFinishSpawn;
+    }
+
+    private void OnDisable()
+    {
+        shipSpawner.ShipSpawned -= OnFinishSpawn;
+    }
+
+    public bool LevelComplete
     {
         get;
         private set;
     }
 
-    public void AddStar()
+    public bool IsAlive
     {
-        StarsCollected++;
-        cockpit.cockpitSetup.AvailableMechanicalPoints++;
+        get;
+        private set;
     }
 
     public void TriggerInvencible()
@@ -44,13 +58,16 @@ public class Player : MonoBehaviour
     {
         if (!invencible)
         {
+            IsAlive = false;
             inventory.DropEverything();
-            SendPlayerKilledEvent();
+            DialogController.GetInstance().CloseDialog();
+            SendPlayerKilledEvent();            
         }
     }
 
     public void Win()
     {
+        LevelComplete = true;
         PlayerWon?.Invoke();
         Invoke("MoveBackToMenu", waitSecondsOnWinBeforeMovingMainMenu);
     }
@@ -62,8 +79,11 @@ public class Player : MonoBehaviour
 
     private void MoveBackToMenu()
     {
-        var nameWithoutExtension = Path.GetFileNameWithoutExtension("Scenes/MainMenu");
-        FindObjectOfType<SceneLoader>().SetScenePath(nameWithoutExtension);
-        FindObjectOfType<SceneLoader>().LoadScene();
+        FindObjectOfType<SceneLoader>().LoadMainMenu();
+    }
+
+    private void OnFinishSpawn()
+    {
+        IsAlive = true;
     }
 }

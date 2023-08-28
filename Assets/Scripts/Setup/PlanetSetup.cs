@@ -15,43 +15,23 @@ public class SatelliteSetup
     public GameObject Prefab;
 }
 
-public class PlanetSetup : MonoBehaviour
+[Serializable]
+public class PlanetSetup
 {
     [Header("General")]
-    [SerializeField] private float Radius;
+    public float Radius;
 
     [Header("Visuals")]
-    [SerializeField] private Sprite Sprite;
+    public Sprite Sprite;
 
     [Header("Gravity Physics")]
-    [SerializeField] private bool EditCurves = false;
-    [SerializeField] private float MinimumOrbitSpeed;
-    [SerializeField] private float MaximumOrbitSpeed;
-    [SerializeField] private float MaximumDistance;
-    [SerializeField] private int OrbitDivisions;
-    [SerializeField] private float DivisionCurveSlope;
-
+    public bool EditCurves = false;
+    public float MinimumOrbitSpeed;
+    public float MaximumOrbitSpeed;
+    public float MaximumDistance;
+    public int OrbitDivisions;
+    public float DivisionCurveSlope;
 
     [Header("Satellites")]
-    [SerializeField] private GameObject prototype;
-    [SerializeField] private List<SatelliteSetup> satellites;
-
-    [Header("References")]
-    private PlanetSurfaceBuilder surfaceBuilder;
-    private SatelliteSpawner satelliteSpawner;
-    private PlanetGravity gravityBehaviour;
-
-    private void OnValidate()
-    {
-        surfaceBuilder = GetComponentInChildren<PlanetSurfaceBuilder>();
-        satelliteSpawner = GetComponentInChildren<SatelliteSpawner>();
-        gravityBehaviour = GetComponentInChildren<PlanetGravity>();
-
-        if (surfaceBuilder)
-            surfaceBuilder.UpdateData(Radius, Sprite);
-        if (satelliteSpawner)
-            satelliteSpawner.UpdateData(prototype, satellites);
-        if (gravityBehaviour)
-            gravityBehaviour.UpdateData(Radius, OrbitDivisions, MinimumOrbitSpeed, MaximumOrbitSpeed, MaximumDistance, DivisionCurveSlope, EditCurves);
-    }
+    public List<SatelliteSetup> satellites;
 }

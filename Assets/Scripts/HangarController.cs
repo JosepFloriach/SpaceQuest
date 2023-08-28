@@ -1,160 +1,109 @@
+using jovetools.gameserialization;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class HangarController : MonoBehaviour
+public class HangarController : SingletonMonoBehaviour<HangarController>, ISerializable
 {
-    [SerializeField] private CockpitSetup setup;
+    [SerializeField] private int defaultShip;
+    [SerializeField] private List<GameObject> ships;
+    
+    private List<int> unlockedShips = new();
+    private List<int> shipsCosts = new();
+    public event Action<GameObject> SelectedShipUpdated;
+    public event Action<GameObject> CurrentShipUpdated;
 
-    public List<GameObject> allowedShips;
+    private int currentShipIdx = 0;
 
-    public event EventHandler<CockpitSetup> ShipUpdated;
-    private int currentShipIdx;
-
-    private void Start()
+    public List<GameObject> Ships
     {
-        SendShipUpdatedEvent();
+        get
+        {
+            return ships;
+        }
     }
 
-    public void ChangeToNext()
+    public GameObject SelectedShip
     {
-        setup.ShipPrefab = allowedShips[(++currentShipIdx) % allowedShips.Count];
-        SendShipUpdatedEvent();
+        get
+        {
+            return ships[currentShipIdx];
+        }
     }
 
-    public void ChangeToPrevious()
+    public int SelectedShipIdx
     {
-        setup.ShipPrefab = allowedShips[(--currentShipIdx) % allowedShips.Count];
-        SendShipUpdatedEvent();
+        get
+        {
+            return currentShipIdx;
+        }
     }
 
-    /*
-    public void IncrementMaxSpeed(int amount)
-    {                
-        if (setup.AvailableMechanicalPoints - amount < 0)
-            return;
-        if (setup.MaxSpeed + amount > 10)
-            return;
-
-        setup.AvailableMechanicalPoints -= amount;
-        setup.MaxSpeed += amount;
-        SendParamsUpdatedEvent();
-    }
-
-    public void DecrementMaxSpeed(int amount)
+    public void OnDestroy()
     {
-        if (setup.AvailableMechanicalPoints + amount > setup.TotalMechanicalPoints)
-            return;
-        if (setup.MaxSpeed - amount < 0)
-            return;
-
-        setup.AvailableMechanicalPoints += amount;
-        setup.MaxSpeed -= amount;
-        SendParamsUpdatedEvent();
+        PersistanceManager<GameData>.Instance.DeregisterSerializableObject(this);
     }
 
-    public void IncrementMaxFuel(int amount)
+    public GameObject GetShipAtIndex(int shipIdx)
     {
-        if (setup.AvailableMechanicalPoints - amount < 0)
-            return;
-        if (setup.MaxFuelCapacity + amount > 10)
-            return;
-
-        setup.AvailableMechanicalPoints -= amount;
-        setup.MaxFuelCapacity += amount;
-        SendParamsUpdatedEvent();
+        return ships[shipIdx];
     }
 
-    public void DecrementMaxFuel(int amount)
+    public bool UnlockShip(int shipIdx)
     {
-        if (setup.AvailableMechanicalPoints + amount > setup.TotalMechanicalPoints)
-            return;
-        if (setup.MaxFuelCapacity - amount < 0)
-            return;
-
-        setup.AvailableMechanicalPoints += amount;
-        setup.MaxFuelCapacity -= amount;
-        SendParamsUpdatedEvent();
+        unlockedShips.Add(shipIdx);
+        return true;
     }
 
-    public void IncrementQuantumDeposit(int amount)
+    public bool IsShipUnlocked(int shipIdx)
     {
-        if (setup.AvailableMechanicalPoints - amount < 0)
-            return;
-        if (setup.MaxQuantumEnergy + amount > 10)
-            return;
-
-        setup.AvailableMechanicalPoints -= amount;
-        setup.MaxQuantumEnergy += amount;
-        SendParamsUpdatedEvent();
+        return unlockedShips.Contains(shipIdx);
     }
 
-    public void DecrementQuantumDeposit(int amount)
+    public bool SelectShip(int shipIdx)
     {
-        if (setup.AvailableMechanicalPoints + amount > setup.TotalMechanicalPoints)
-            return;
-        if (setup.MaxQuantumEnergy - amount < 0)
-            return;
-
-        setup.AvailableMechanicalPoints += amount;
-        setup.MaxQuantumEnergy -= amount;
-        SendParamsUpdatedEvent();
+        if(!unlockedShips.Contains(shipIdx))
+        {
+            return false;
+        }
+        currentShipIdx = shipIdx;
+        PersistanceManager<GameData>.Instance.SaveGame();
+        return true;
     }
 
-    public void IncrementManeuverability(int amount)
+    public void CreateData(ref IGameData data)
     {
-        if (setup.AvailableMechanicalPoints - amount < 0)
-            return;
-        if (setup.RotationThrusterPower + amount > 10)
-            return;
-
-        setup.AvailableMechanicalPoints -= amount;
-        setup.RotationThrusterPower += amount;
-        SendParamsUpdatedEvent();
+        var gameData = (GameData)data;
+        gameData.Ships.CurrentShip = defaultShip;
+        shipsCosts.Clear();
+        foreach (GameObject ship in ships)
+        {
+            int cost = ship.GetComponent<Cockpit>().cockpitSetup.GemsCost;
+            shipsCosts.Add(cost);
+        }
+        gameData.Ships.Costs = shipsCosts;
+        gameData.Ships.UnlockedShips = new List<int> { defaultShip };
     }
 
-    public void DecrementManeuverability(int amount)
+    public void LoadData(IGameData data)
     {
-        if (setup.AvailableMechanicalPoints + amount > setup.TotalMechanicalPoints)
-            return;
-        if (setup.RotationThrusterPower - amount < 0)
-            return;
-
-        setup.AvailableMechanicalPoints += amount;
-        setup.RotationThrusterPower -= amount;
-        SendParamsUpdatedEvent();
+        var gameData = (GameData)data;
+        currentShipIdx = gameData.Ships.CurrentShip;
+        unlockedShips = gameData.Ships.UnlockedShips;
+        shipsCosts = gameData.Ships.Costs;
     }
 
-    public void IncrementVerticalThrusterPower(int amount)
+    public void SaveData(ref IGameData data)
     {
-        if (setup.AvailableMechanicalPoints - amount < 0)
-            return;
-        if (setup.VerticalThrusterPower + amount > 10)
-            return;
-
-        setup.AvailableMechanicalPoints -= amount;
-        setup.VerticalThrusterPower += amount;
-        SendParamsUpdatedEvent();
+        var gameData = (GameData)data;
+        gameData.Ships.CurrentShip = currentShipIdx;
+        gameData.Ships.Costs = shipsCosts;
+        gameData.Ships.UnlockedShips = unlockedShips;
     }
 
-    public void DecrementVerticalThrusterPower(int amount)
+    public void ClearData(IGameData data)
     {
-        if (setup.AvailableMechanicalPoints + amount > setup.TotalMechanicalPoints)
-            return;
-        if (setup.VerticalThrusterPower - amount < 0)
-            return;
-
-        setup.AvailableMechanicalPoints += amount;
-        setup.VerticalThrusterPower -= amount;
-        SendParamsUpdatedEvent();
+        currentShipIdx = defaultShip;
+        unlockedShips = new List<int> { defaultShip };
     }
-    */
-    public void SendShipUpdatedEvent()
-    {
-        ShipUpdated?.Invoke(this, setup);
-    }
-
 }

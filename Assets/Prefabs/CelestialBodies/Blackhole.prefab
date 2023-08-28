@@ -179,8 +179,8 @@ GameObject:
   - component: {fileID: 6979155929490154575}
   - component: {fileID: 562436336964233732}
   - component: {fileID: 5708179162751061611}
-  - component: {fileID: 6420115696056401714}
   - component: {fileID: 792138985801316221}
+  - component: {fileID: 5112770597397554911}
   m_Layer: 7
   m_Name: CenterHole
   m_TagString: BlackHole
@@ -253,18 +253,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6420115696056401714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2645702334115310514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73150c1cff2a14e4ab1b51eb05da669e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &792138985801316221
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -281,6 +269,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.3
+--- !u!114 &5112770597397554911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2645702334115310514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14f70eefb6706346a1671d4bafece27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4211902845302937726
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +466,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4800049200095191134}
-  - component: {fileID: 4800049200095191073}
   m_Layer: 0
   m_Name: Blackhole
   m_TagString: BlackHole
@@ -492,28 +491,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4800049200095191073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4800049200095191135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e410d41ab421faf459c76cb5dbdec2d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Radius: 15.15
-  Sprite: {fileID: 0}
-  EditCurves: 0
-  MinimumOrbitSpeed: 0.01
-  MaximumOrbitSpeed: 500
-  MaximumDistance: 138.2
-  OrbitDivisions: 14
-  DivisionCurveSlope: 170
-  prototype: {fileID: 0}
-  satellites: []
 --- !u!1 &4800049200305410260
 GameObject:
   m_ObjectHideFlags: 0

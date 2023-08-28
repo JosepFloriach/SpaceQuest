@@ -5,37 +5,41 @@ using UnityEngine.UI;
 
 public class StarsUIController : MonoBehaviour
 {
-    [SerializeField] Color disabledColor;
-    [SerializeField] Color enabledColor;
-    [SerializeField] List<Image> stars;
+    [SerializeField] SpriteRenderer spriteHolder;
+    [SerializeField] SpriteRenderer distorsionHolder;
+    [SerializeField] List<Sprite> bonusImages;
+    [SerializeField] AnimationCurve gravityDistorsionCurve;
 
-    private Image[] starImages;
     private Inventory inventory;
+    private ShipSpawner shipSpawner;
 
     private void Awake()
     {
-        starImages = stars.ToArray();
         inventory = FindObjectOfType<Inventory>();
+        ReferenceValidator.NotNull(inventory, spriteHolder, distorsionHolder, bonusImages, gravityDistorsionCurve);
     }
 
     private void Start()
     {
-        foreach ( var image in starImages)
-        {
-            image.color = disabledColor;
-        }
+        shipSpawner = FindObjectOfType<ShipSpawner>();
+        ReferenceValidator.NotNull(shipSpawner);
     }
 
     private void Update()
     {
         int currentStars = inventory.GetItemCount("StarPickup");
-        for (int idx = 0; idx < currentStars; ++idx)
+        spriteHolder.sprite = bonusImages[currentStars];
+        distorsionHolder.sprite = bonusImages[currentStars];
+        if (shipSpawner.Ship != null)
         {
-            starImages[idx].color = enabledColor;
-        }
-        for (int idx = currentStars; idx < stars.Count; ++idx)
-        {
-            starImages[idx].color = disabledColor;
+            Cockpit ship = shipSpawner.Ship;
+            Vector2 distortion = Vector2.zero;
+            IForce gravityForce = ship.PhysicsBody.GetLinearForce("PlanetGravity");
+            if (gravityForce != null)
+            {
+                distortion = new Vector2(gravityDistorsionCurve.Evaluate(gravityForce.Direction.magnitude), 0.0f);                
+            }   
+            distorsionHolder.material.SetVector("_DistorsionPosition", distortion);
         }
     }
 }

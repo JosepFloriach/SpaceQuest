@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI
+  m_TableCollectionNameGuidString: e8d057a2ce397ef4faba58278f69a07b
+  m_Entries:
+  - m_Id: 3843708862464
+    m_Key: MainMenu/Canvas/Garage/Top/Stats/MaxSpeed/Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3974982189056
+    m_Key: MainMenu/Canvas/Garage/Top/Stats/Acceleration/Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4061972054016
+    m_Key: MainMenu/Canvas/Garage/Top/Stats/RotationPower/Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4147821068288
+    m_Key: MainMenu/Canvas/Garage/Top/Stats/FuelDeposit/Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4207828975616
+    m_Key: MainMenu/Canvas/Garage/Top/Stats/QuantumDeposit/Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5271131441737728
+    m_Key: MainMenu_v2/Canvas/MainMenu/Default/SetupPanel/GraphicsSettings/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5271277554511872
+    m_Key: MainMenu_v2/Canvas/MainMenu/Default/SetupPanel/ResetData/Button/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5271628156383232
+    m_Key: MainMenu_v2/Canvas/MainMenu/Default/SetupPanel/Language/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510888767762432
+    m_Key: Quality_VeryLow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510918929002496
+    m_Key: Quality_Low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510942295470080
+    m_Key: Quality_Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510967612289024
+    m_Key: Quality_High
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5510994946568192
+    m_Key: Quality_VeryHigh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5511018380144640
+    m_Key: Quality_Ultra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8089016883097600
+    m_Key: Development_Information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8785166862790656
+    m_Key: Tutorial_Pickup_Freeze_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8785462993235968
+    m_Key: Tutorial_Pickup_Fuel_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8899162320285696
+    m_Key: Tutorial_Pickup_Quantum_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8899328867708928
+    m_Key: Tutorial_Pickup_SpeedUp_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8899617649733632
+    m_Key: Tutorial_Pickup_SpeedDown_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8899728756846592
+    m_Key: Tutorial_Pickup_Random_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8900202809667584
+    m_Key: Tutorial_Pickup_BonusGem_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8900533836722176
+    m_Key: Tutorial_Pickup_LaserTurret_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8900724199403520
+    m_Key: Tutorial_Pickup_SpaceStation_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17123465209720832
+    m_Key: T2/Map/GameplayEvents/TutorialGravity
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7847175570186567682
+  references:
+    version: 2
+    RefIds:
+    - rid: 7847175570186567682
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1688028698459

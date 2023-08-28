@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Dialogs Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Dialogs
+  m_TableCollectionNameGuidString: 62e60c34027284645bbb7e266596e4e5
+  m_Entries:
+  - m_Id: 12153401344
+    m_Key: Tutorial1_Intro_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 466291666944
+    m_Key: Tutorial1_RearThruster_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4982365892608
+    m_Key: Tutorial1_FronThruster_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5216328364032
+    m_Key: Tutorial1_FronThruster_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5483488751616
+    m_Key: Tutorial1_FronThruster_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5694013452288
+    m_Key: Tutorial1_FronThruster_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6012197548032
+    m_Key: Tutorial1_FronThruster_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6218070765568
+    m_Key: Tutorial1_Gyroscope_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6793395056640
+    m_Key: Tutorial1_Gyroscope_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7407587962880
+    m_Key: Tutorial1_NextStation_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7782122532864
+    m_Key: Tutorial1_Fuel_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8203364872192
+    m_Key: Tutorial1_Fuel_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8728290406400
+    m_Key: Tutorial1_Fuel_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9463107301376
+    m_Key: Level1_Intro_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9872320376832
+    m_Key: Level1_Intro_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2892670584631296
+    m_Key: Tutorial2_Intro1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2893586519961600
+    m_Key: Tutorial2_Intro2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2894846384025600
+    m_Key: Tutorial2_Gravity1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2898131941732352
+    m_Key: 'Tutorial2_Gravity3
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3720794964635648
+    m_Key: Tutorial2_Gravity2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4295551632195584
+    m_Key: Tutorial2_Intro3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4485305506082816
+    m_Key: Tutorial2_OrbitScape1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4492817311608832
+    m_Key: Tutorial2_NextPlanet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4643948515999744
+    m_Key: Tutorial2_WarpEngine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4644873389391872
+    m_Key: Tutorial2_QuantumEnergy1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4645600744620032
+    m_Key: Tutorial2_QuantumEnergy2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9175320823738368
+    m_Key: Level1_MissingRequirement
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7847175416908873752
+  references:
+    version: 2
+    RefIds:
+    - rid: 7847175416908873752
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1687444059836

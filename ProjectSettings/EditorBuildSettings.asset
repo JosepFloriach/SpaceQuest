@@ -6,12 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 5144340c9651f0547ac4cbd75a688867
+    path: Assets/Scenes/MainMenu_v2.unity
+    guid: e12775aaec4c8b944aef96b586181a75
   - enabled: 1
-    path: Assets/Scenes/Levels/1.unity
-    guid: c3f40351fc58ccd4ea097ff9bc3b854d
+    path: Assets/Scenes/Levels/T1.unity
+    guid: 34a6325ef9a275c4489d029c72b5a9af
+  - enabled: 1
+    path: Assets/Scenes/Levels/T2.unity
+    guid: 1222354a1d7084f489737ed8a9f8c544
   - enabled: 1
     path: Assets/Scenes/Levels/L1.unity
     guid: bec450b86e5339d4b89815746fe20ff6
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/Levels/L2.unity
+    guid: ae67cbabf85cd084d8800777c3c917a2
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: ea3bbc1db0bf5374bb2371c595b0ee25,
+      type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
+      guid: 2b000a3f57fcd6d419456b27b5ed437f, type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: 88b716ed26ed5254cba7afa050d30b48,
+      type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 201e319c3ca3d3b4593c086503e962ec,
+      type: 2}

@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ships
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 746b19299cf0ed14bb443e52e37ac694, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 2e59ab41ef205ca42b6075e41c5c6145: 21300000
+    - cf6ae4e3329f308449ee72f4b058bc4d: 21300000
+    - 5c1e9da4795404b44a31ad66cb1635c3: 21300000
+    - b021b5b4634babf43ac50dd03aaa1902: 21300000
+    - 1e6accb40b3265846823f949c9472dd3: 21300000
+    - 070ea63569801b74bbcfde5ff51342fe: 21300000
+    - e09e91f5cd120584d9d950ef7cb51a1b: 21300000
+    - e4b5aa069d489d644b6c5012bb3aca0d: 21300000
+    - 402dbe7661169ca498e87b23b025272c: 21300000
+    - e25c4578dff7bf64a902612cb6083e33: 21300000
+    - d18ff029f8778774f84d592df15aff7b: 21300000
+    - 1f2f1e3a99dcd57448b119cb53d3408b: 21300000
+    - c034bcfa76986cc478e78f52e709ce96: 21300000
+    - 7157a81bfbba1cc43875195b4bfb4c01: 21300000
+    - de293c5b0d1edf04ea97671430a34a2d: 21300000
+    - 61c63c0d91f1c464eb84f992c40fc954: 21300000
+    - f823428d81650cb44b1db95cd2dbf034: 21300000
+    - 0c95095f4fbc1044e87aaa2c4cb57c03: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 2e59ab41ef205ca42b6075e41c5c6145, type: 3}
+  - {fileID: 21300000, guid: cf6ae4e3329f308449ee72f4b058bc4d, type: 3}
+  - {fileID: 21300000, guid: 5c1e9da4795404b44a31ad66cb1635c3, type: 3}
+  - {fileID: 21300000, guid: b021b5b4634babf43ac50dd03aaa1902, type: 3}
+  - {fileID: 21300000, guid: 1e6accb40b3265846823f949c9472dd3, type: 3}
+  - {fileID: 21300000, guid: 070ea63569801b74bbcfde5ff51342fe, type: 3}
+  - {fileID: 21300000, guid: e09e91f5cd120584d9d950ef7cb51a1b, type: 3}
+  - {fileID: 21300000, guid: e4b5aa069d489d644b6c5012bb3aca0d, type: 3}
+  - {fileID: 21300000, guid: 402dbe7661169ca498e87b23b025272c, type: 3}
+  - {fileID: 21300000, guid: e25c4578dff7bf64a902612cb6083e33, type: 3}
+  - {fileID: 21300000, guid: d18ff029f8778774f84d592df15aff7b, type: 3}
+  - {fileID: 21300000, guid: 1f2f1e3a99dcd57448b119cb53d3408b, type: 3}
+  - {fileID: 21300000, guid: c034bcfa76986cc478e78f52e709ce96, type: 3}
+  - {fileID: 21300000, guid: 7157a81bfbba1cc43875195b4bfb4c01, type: 3}
+  - {fileID: 21300000, guid: de293c5b0d1edf04ea97671430a34a2d, type: 3}
+  - {fileID: 21300000, guid: 61c63c0d91f1c464eb84f992c40fc954, type: 3}
+  - {fileID: 21300000, guid: f823428d81650cb44b1db95cd2dbf034, type: 3}
+  - {fileID: 21300000, guid: 0c95095f4fbc1044e87aaa2c4cb57c03, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Traveler_low_res
+  - Transporter_low_res
+  - Spider_low_res
+  - Traveler_mid_res
+  - Seeker_mid_res
+  - Pointer_low_res
+  - Octopus_mid_res
+  - Cruiser_low_res
+  - Explorer_mid_res
+  - Cruiser_midi_res
+  - Seeker_low_res
+  - Raptor_low_res
+  - Transporter_mid_res
+  - Explorer_low_res
+  - Spider_mid_res
+  - Raptor_mid_res
+  - Pointer_mid_res
+  - Octopus_low_res
+  m_RenderDataMap: {}
+  m_Tag: Ships
+  m_IsVariant: 0

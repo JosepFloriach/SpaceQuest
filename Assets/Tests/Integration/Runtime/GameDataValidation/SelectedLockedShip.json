@@ -1,0 +1,86 @@
+{
+    "GameSetup": {
+        "Language": 0,
+        "GraphicsQuality": 2
+    },
+    "Ships": {
+        "UnlockedShips": [
+            0,
+            2,
+            3
+        ],
+        "Costs": [
+            0,
+            5,
+            2,
+            2,
+            4,
+            3,
+            4,
+            6,
+            6
+        ],
+        "CurrentShip": 7
+    },
+    "Currency": {
+        "TotalAmountCollected": 6,
+        "CurrentAmountAvailable": 2,
+        "AmountSpent": 4
+    },
+    "LevelProgression": {
+        "FurthestSystemCompleted": -1,
+        "FurthestLevelCompleted": 2,
+        "Levels": [
+            {
+                "LevelIndex": 0,
+                "LevelName": "T1",
+                "LevelCompleted": true,
+                "GemsCollected": [
+                    true,
+                    false,
+                    true
+                ]
+            },
+            {
+                "LevelIndex": 1,
+                "LevelName": "T2",
+                "LevelCompleted": true,
+                "GemsCollected": [
+                    true,
+                    false,
+                    true
+                ]
+            },
+            {
+                "LevelIndex": 2,
+                "LevelName": "L1",
+                "LevelCompleted": true,
+                "GemsCollected": [
+                    true,
+                    false,
+                    true
+                ]
+            },
+            {
+                "LevelIndex": 3,
+                "LevelName": "L2",
+                "LevelCompleted": false,
+                "GemsCollected": [
+                    false,
+                    false,
+                    false
+                ]
+            },
+            {
+                "LevelIndex": 4,
+                "LevelName": "L3",
+                "LevelCompleted": false,
+                "GemsCollected": [
+                    false,
+                    false,
+                    false
+                ]
+            }
+        ]
+    }
+}

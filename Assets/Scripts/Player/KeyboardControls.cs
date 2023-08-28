@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,42 +8,35 @@ using static UnityEngine.InputSystem.InputAction;
 public class KeyboardControls : MonoBehaviour
 {
     private Cockpit cockpit;
-    private Player player;
 
+    public event Action PressedScape;
+    
     [SerializeField] private InputActionAsset inputConfig;
-    [SerializeField] private bool backwards;
-    [SerializeField] private bool forward;
-    private void Awake()
+
+    private bool enable = false;
+
+    public bool Enable
     {
-        //cockpit = FindObjectOfType<Cockpit>();
-        player = FindObjectOfType<Player>();
+        get { return enable; }
+        set { enable = value; }
     }
 
-    private void OnThrustBackward(CallbackContext context)
-    {
-        cockpit.ThrustBackward();
-    }
-
-
-    // Update is called once per frame
     private void Update()
     {
         if (cockpit == null)
-            cockpit = FindObjectOfType<Cockpit>() ;
-
-        /*bool rotating = false;
-        foreach(var touch in Input.touches)
         {
-            if (touch.position.x < Screen.width / 2.0f)
-            {
-                ProcessVerticalThruster(touch);
-            }
-            else
-            {
-                ProcessGyroscope(touch);
-            }
-        }*/
+            cockpit = FindObjectOfType<Cockpit>();
+        }
 
+        if (!Enable || cockpit == null)
+        {
+            return;
+        }   
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PressedScape?.Invoke();
+        }
         if (Input.GetKey(KeyCode.A))
         {
             cockpit.RotateLeft();
@@ -56,11 +50,11 @@ public class KeyboardControls : MonoBehaviour
             cockpit.StopRotation();
         }
      
-        if (Input.GetKey(KeyCode.W) || forward)
+        if (Input.GetMouseButton(0) && !cockpit.ThrustingBackward)
         {
             cockpit.ThrustForward();
         }
-        else if (Input.GetKey(KeyCode.S) || backwards)
+        else if (Input.GetMouseButton(1) && !cockpit.ThrustingForward)
         {
             cockpit.ThrustBackward();
         }
@@ -69,86 +63,13 @@ public class KeyboardControls : MonoBehaviour
             cockpit.ResetVerticalThruster();
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            cockpit.EnableQuantumEngine();
+            cockpit.EnableWarpEngine();
         }
-        else
+        else if(!Input.GetKey(KeyCode.Space))
         {
-            cockpit.DisableQuantumEngine();
+            cockpit.ResetWarpEngine();
         }
-
-
-        /*if (rotating)
-        {
-            cockpit.ResetHorizontalThruster();
-            cockpit.ResetVerticalThruster();
-            return;
-        }
-        if (Input.GetMouseButton(0))
-        {
-            // Get screen position
-            var mousePixelCoordinates = Input.mousePosition;
-            mousePixelCoordinates.z = Camera.main.nearClipPlane;
-            var mouseWorldPosition = Camera.main.ScreenToWorldPoint(mousePixelCoordinates);
-
-            // Get direction from position to ship
-            var directionFromShipToMouse = mouseWorldPosition - cockpit.transform.position;
-
-            // Compute angle between forward and direction
-            var angle = Vector3.Angle(cockpit.transform.right, directionFromShipToMouse);
-
-            // if angle is negative or greater than 90 (don't know
-            if (angle > 90)
-            {
-                cockpit.RotateLeft();
-            }
-            if (angle < 90)
-            {
-                cockpit.RotateRight();
-            }
-        }*/
-
-
-
-
-
-
-
-
-
-
-
-        /*
-        if (Input.GetKey(KeyCode.W))
-        {
-            cockpit.ThrustForward();
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            cockpit.ThrustBackward();
-        }
-        else
-        {
-            cockpit.ResetVerticalThruster();
-        }*/
-    }
-
-    private void OnDrawGizmos()
-    {
-        /*cockpit = FindObjectOfType<Cockpit>();
-        player = FindObjectOfType<Player>();
-        var mousePixelCoordinates = Input.mousePosition;
-        mousePixelCoordinates.z = Camera.main.nearClipPlane;
-        var mouseWorldPosition = Camera.main.ScreenToWorldPoint(mousePixelCoordinates);
-
-        // Get direction from position to ship
-        var directionFromShipToMouse = mouseWorldPosition - cockpit.transform.position;
-
-        // Compute angle between forward and direction
-        var angle = Vector3.Angle(cockpit.transform.up, directionFromShipToMouse);
-
-        Gizmos.DrawLine(cockpit.transform.up * 10.0f, directionFromShipToMouse.normalized * 10.0f);
-        Gizmos.DrawCube(mouseWorldPosition, new Vector3(4, 4, 4));*/
     }
 }

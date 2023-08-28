@@ -4,10 +4,10 @@ using UnityEngine;
 public class CheckPointManager : MonoBehaviour
 {
     [SerializeField] private List<CheckPoint> checkPoints;
+    [SerializeField] private CheckPoint initialCheckPoint;
 
     private ShipSpawner shipSpawner;
-    private Cockpit cockpit;
-
+    
     private CheckPoint currentCheckPoint;
     public CheckPoint CurrentCheckPoint
     {
@@ -31,14 +31,23 @@ public class CheckPointManager : MonoBehaviour
 
     private void Awake()
     {
-        cockpit = FindObjectOfType<Cockpit>();
-        shipSpawner = FindObjectOfType<ShipSpawner>();                
+        shipSpawner = FindObjectOfType<ShipSpawner>();
+        ReferenceValidator.NotNull(shipSpawner, checkPoints, initialCheckPoint);
     }
 
     private void Start()
     {
-        MoveToCurrentCheckPoint();
+        CurrentCheckPoint = initialCheckPoint;
+    }
+
+    private void OnEnable()
+    {
         shipSpawner.StartSpawn += OnStartSpawn;
+    }
+
+    private void OnDisable()
+    {
+        shipSpawner.StartSpawn -= OnStartSpawn;
     }
 
     public void AddCheckPoint(CheckPoint checkPoint)
@@ -53,7 +62,7 @@ public class CheckPointManager : MonoBehaviour
 
     private void MoveToCurrentCheckPoint()
     {
-        cockpit.transform.position = CurrentCheckPoint.transform.position;
+        shipSpawner.Ship.transform.position = CurrentCheckPoint.transform.position;
+        shipSpawner.Ship.transform.rotation = CurrentCheckPoint.transform.rotation;
     }
-
 }

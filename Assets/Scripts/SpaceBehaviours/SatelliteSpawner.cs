@@ -3,12 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SatelliteSpawner : MonoBehaviour
+public class SatelliteSpawner : MonoBehaviour, IReseteable
 {
-    private List<SatelliteSetup> satellites;
-    private void Start()
+    private List<SatelliteSetup> satellites = new();
+
+    public void Reset()
     {
-        foreach(SatelliteSetup satelliteSetup in satellites)
+        foreach (SatelliteSetup satelliteSetup in satellites)
+        {
+            satelliteSetup.Prefab.SetActive(true);
+        }
+    }
+
+    public void SpawnSatellites()
+    {
+        foreach (SatelliteSetup satelliteSetup in satellites)
         {
             var satellite = GameObject.Instantiate(satelliteSetup.Prefab);
             satellite.AddComponent<Satellite>();
@@ -19,7 +28,7 @@ public class SatelliteSpawner : MonoBehaviour
         }
     }
 
-    public void UpdateData(GameObject prototype, List<SatelliteSetup> satellites)
+    public void UpdateData(List<SatelliteSetup> satellites)
     {
         this.satellites = satellites;
     }

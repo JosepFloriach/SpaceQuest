@@ -2,27 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UltraGravity : InteractableBase, Force
+public class UltraGravity : InteractableBase, IForce
 {
     [SerializeField] private float KillRadius;
     [SerializeField] private AnimationCurve SpeedCurve;
     [SerializeField] private float radius;
     [SerializeField] private float distance;
 
-    public Vector3 Force { get; protected set; }
+    public Vector3 Direction { get; protected set; }
+
+    public GameObject GetObject()
+    {
+        return this.gameObject;
+    }
 
     protected override void OnStart()
     {
         GetComponent<CircleCollider2D>().radius = 105;
     }
 
-    public override void StartInteraction(Player player, PhysicsBody cockpit, Transform transform)
+    public override void StartInteraction(Player player, IPhysicsBody cockpit, Transform transform)
     {
         base.StartInteraction(player, cockpit, transform);
 
     }
 
-    public override void ContinueInteraction(Player player, PhysicsBody cockpit, Transform transform)
+    public override void ContinueInteraction(Player player, IPhysicsBody cockpit, Transform transform)
     {
         base.ContinueInteraction(player, cockpit, transform);
         var directionToPlanet = GetDirectionToPlanet(transform);
@@ -33,12 +38,12 @@ public class UltraGravity : InteractableBase, Force
         }
         else
         {
-            Force = directionToPlanet * GetForceAtRadius(distanceToPlanet);
-            cockpit.AddLinearForce(ID, Force);
+            Direction = directionToPlanet * GetForceAtRadius(distanceToPlanet);
+            cockpit.AddLinearForce(ID, this);
         }
     }
 
-    public override void EndInteraction(Player player, PhysicsBody cockpit, Transform transform)
+    public override void EndInteraction(Player player, IPhysicsBody cockpit, Transform transform)
     {
         base.EndInteraction(player, cockpit, transform);
     }

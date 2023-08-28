@@ -25,15 +25,6 @@ public class PlanetSurfaceBuilder : MonoBehaviour
         spriteRenderer.transform.localScale = new Vector3(radius / 2.0f, radius / 2.0f, 1.0f);
     }
 
-    /*private void Update()
-    {
-        centerOffset.x += 1.0f * Time.deltaTime;
-        if (centerOffset.x > 6.5f)
-            centerOffset.x = -6.5f;
-
-        UpdateMaterial();
-    }*/
-
     private void UpdateMaterial()
     {
         /*if (materialOverride == null)

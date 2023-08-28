@@ -1,0 +1,252 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &549373153764359187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5186199743137418398}
+  - component: {fileID: 5193060899453185782}
+  - component: {fileID: 4515960566056912563}
+  - component: {fileID: 5572338954427901983}
+  - component: {fileID: 3547148242505017297}
+  - component: {fileID: 8459211763361405577}
+  - component: {fileID: 7890530626720477819}
+  - component: {fileID: 584741362567768857}
+  - component: {fileID: 679090768327797795}
+  - component: {fileID: 3272731220995679189}
+  - component: {fileID: 7443860321949036092}
+  - component: {fileID: 7532402525266187232}
+  m_Layer: 0
+  m_Name: Console
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5186199743137418398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549373153764359187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5193060899453185782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549373153764359187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e688f8ff840418d4bb9c24d6100e7d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleConsoleAction:
+    m_Name: Toggle Console
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 46ad16b5-061c-4d00-8c4c-0523eba473af
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 73c9ec20-53d3-4a9b-bbc2-7809cebeb91b
+      m_Path: <Keyboard>/backquote
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Toggle Console
+      m_Flags: 0
+    m_Flags: 0
+  commitCommandAction:
+    m_Name: Commit Command
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a23807cf-3dd5-4cb1-b7dc-6da1937eb534
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 5ccea1b0-c53d-4e73-a1e2-b29f92d0f4d2
+      m_Path: <Keyboard>/enter
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Commit Command
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 68d507f5-b04b-4444-bf7b-ff709e01d817
+      m_Path: <Keyboard>/numpadEnter
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Commit Command
+      m_Flags: 0
+    m_Flags: 0
+--- !u!114 &4515960566056912563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549373153764359187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bbefac5caad2d4aa9b7fb762d47ad7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shortcut:
+    m_Name: Shortcut
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 12e453a5-9e59-450c-b1a9-f9a78731aa0a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e95c2b09-487f-4085-9989-f6a113c3dfe1
+      m_Path: <Keyboard>/f
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Shortcut
+      m_Flags: 0
+    m_Flags: 0
+--- !u!114 &5572338954427901983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549373153764359187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca40411426213f478ed29f5f0119469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shortcut:
+    m_Name: Shortcut
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c9d51c93-1c1a-448f-9e80-a38369d7c3c3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 1e358309-64ee-4389-bd0a-829cf3a10ab7
+      m_Path: <Keyboard>/r
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Shortcut
+      m_Flags: 0
+    m_Flags: 0
+--- !u!114 &3547148242505017297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549373153764359187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c610a0728a049b14eb3d294b32024e6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8459211763361405577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549373153764359187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d447c7ded3cfe8e47a467e194aa35201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7890530626720477819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549373153764359187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e7190beba0f88c43b6c7b7a5bb0b43f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &584741362567768857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549373153764359187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f9800c7f120b049a92c77c0775a46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &679090768327797795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549373153764359187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc786b0eb41c2ef4894611451d85e7bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3272731220995679189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549373153764359187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76cda10c33c5f3d44a42b17f9656dde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7443860321949036092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549373153764359187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf72c46ff5fd46c43af907f9e396b3d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7532402525266187232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549373153764359187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d456aa96cafd7f141a2518eabe64faf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

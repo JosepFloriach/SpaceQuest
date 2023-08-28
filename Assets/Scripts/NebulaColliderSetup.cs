@@ -18,8 +18,17 @@ public class NebulaColliderSetup : MonoBehaviour
 
     private void Start()
     {
-        NebulaBehaviour.NebulaExit += OnNebulaExit;
         particlesSystem.trigger.AddCollider(FindObjectOfType<Cockpit>());
+    }
+
+    private void OnEnable()
+    {
+        NebulaBehaviour.NebulaExit += OnNebulaExit;
+    }
+
+    private void OnDisable()
+    {
+        NebulaBehaviour.NebulaExit -= OnNebulaExit;
     }
 
     public void OnParticleTrigger()

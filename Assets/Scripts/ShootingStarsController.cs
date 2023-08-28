@@ -26,10 +26,16 @@ public class ShootingStarsController : MonoBehaviour
         parallax = FindObjectOfType<ParallaxEffect>();
     }
 
-    private void Start()
+    private void OnEnable()
     {
         ParticleSystemLifeCycle.Death += OnDeath;
     }
+
+    private void OnDisable()
+    {
+        ParticleSystemLifeCycle.Death -= OnDeath;
+    }
+
 
     // Update is called once per frame
     private void Update()

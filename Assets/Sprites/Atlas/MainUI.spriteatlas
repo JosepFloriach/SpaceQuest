@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MainUI
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: d3487cd8b8461a344b52807df68a9028, type: 3}
+    - {fileID: 102900000, guid: f6e66a1714b95664a96389f400cfd28f, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 142dd420379e8b1449a0cd72ee5c69b0: 21300000
+    - f3b93550ab6433141b221cf92c8b5dae: 21300000
+    - 3dd481a086c75954e851e87df084bac9: 21300000
+    - 1fc407c072cb5e049a860ea9fee172f5: 21300000
+    - db008101fafc3074fbf93e1e21b2b69f: 21300000
+    - fe225201d7fda0b47a553ec3301db096: 21300000
+    - b52170518f6f4fc4785e35f98bc7e27b: 21300000
+    - 8902a151cc3a84346953ecfcb9cf7976: 21300000
+    - 5e8c7971571e87b4fb2b1d1b6c346944: 21300000
+    - 86448df1da7a5a346a47b28a19f6f064: 21300000
+    - db23e522bb1e4c7498fe91a94e3f651b: 21300000
+    - 5599f852a7deda4478b9a8f520cfa92d: 21300000
+    - df59f8c201ce30d4abd7a1f2c4953883: 21300000
+    - 9f994f23d5745734d9043e39d2d06416: 21300000
+    - fccd4c738e4f7164fbf890db102c9265: 21300000
+    - 2508ea253fbc9374a9ea115f2fce11d8: 21300000
+    - 884c4895f5477c74e804854432cb99a3: 21300000
+    - 4d16fbe5c7886f44f9451c50e6068c6b: 21300000
+    - 0d322b26fa04207409df80399b241852: 21300000
+    - e7155576248a16444853f38d905553af: 21300000
+    - af0a6c7730e7b6c42819927626417da1: 21300000
+    - 91fbdbb7a78dfd1459af012690d3d42d: 21300000
+    - da983bc74e3d6474c88b6f937a173f4d: 21300000
+    - aab195487aca3ac4694fccd4feb8effd: 21300000
+    - da2697b8566fe8d478f94db030d08bbe: 21300000
+    - 472a1c794b61383499e3e142331b9e21: 21300000
+    - 7ab43f0aedd13774eac9a798d0bc13c2: 21300000
+    - 9ada56bb3c86e214f99a2f8843fe8b62: 21300000
+    - a47469db6a158ca49a6d84b47f839c6d: 21300000
+    - a885481c8ee2b884c9f64801c0b8262e: 21300000
+    - c8584d8c247cbb44cb340c0edb801b3e: 21300000
+    - c3d9604db25390a468cd7b9c47f2d27b: 21300000
+    - f25d227e8554cb14d8a73a80c78803f0: 21300000
+    - 050870aeecbbe934884c86b8c119a77b: 21300000
+    - efc2cb6f8cecd324d846a2c15a4f3c15: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 142dd420379e8b1449a0cd72ee5c69b0, type: 3}
+  - {fileID: 21300000, guid: f3b93550ab6433141b221cf92c8b5dae, type: 3}
+  - {fileID: 21300000, guid: 3dd481a086c75954e851e87df084bac9, type: 3}
+  - {fileID: 21300000, guid: 1fc407c072cb5e049a860ea9fee172f5, type: 3}
+  - {fileID: 21300000, guid: db008101fafc3074fbf93e1e21b2b69f, type: 3}
+  - {fileID: 21300000, guid: fe225201d7fda0b47a553ec3301db096, type: 3}
+  - {fileID: 21300000, guid: b52170518f6f4fc4785e35f98bc7e27b, type: 3}
+  - {fileID: 21300000, guid: 8902a151cc3a84346953ecfcb9cf7976, type: 3}
+  - {fileID: 21300000, guid: 5e8c7971571e87b4fb2b1d1b6c346944, type: 3}
+  - {fileID: 21300000, guid: 86448df1da7a5a346a47b28a19f6f064, type: 3}
+  - {fileID: 21300000, guid: db23e522bb1e4c7498fe91a94e3f651b, type: 3}
+  - {fileID: 21300000, guid: 5599f852a7deda4478b9a8f520cfa92d, type: 3}
+  - {fileID: 21300000, guid: df59f8c201ce30d4abd7a1f2c4953883, type: 3}
+  - {fileID: 21300000, guid: 9f994f23d5745734d9043e39d2d06416, type: 3}
+  - {fileID: 21300000, guid: fccd4c738e4f7164fbf890db102c9265, type: 3}
+  - {fileID: 21300000, guid: 2508ea253fbc9374a9ea115f2fce11d8, type: 3}
+  - {fileID: 21300000, guid: 884c4895f5477c74e804854432cb99a3, type: 3}
+  - {fileID: 21300000, guid: 4d16fbe5c7886f44f9451c50e6068c6b, type: 3}
+  - {fileID: 21300000, guid: 0d322b26fa04207409df80399b241852, type: 3}
+  - {fileID: 21300000, guid: e7155576248a16444853f38d905553af, type: 3}
+  - {fileID: 21300000, guid: af0a6c7730e7b6c42819927626417da1, type: 3}
+  - {fileID: 21300000, guid: 91fbdbb7a78dfd1459af012690d3d42d, type: 3}
+  - {fileID: 21300000, guid: da983bc74e3d6474c88b6f937a173f4d, type: 3}
+  - {fileID: 21300000, guid: aab195487aca3ac4694fccd4feb8effd, type: 3}
+  - {fileID: 21300000, guid: da2697b8566fe8d478f94db030d08bbe, type: 3}
+  - {fileID: 21300000, guid: 472a1c794b61383499e3e142331b9e21, type: 3}
+  - {fileID: 21300000, guid: 7ab43f0aedd13774eac9a798d0bc13c2, type: 3}
+  - {fileID: 21300000, guid: 9ada56bb3c86e214f99a2f8843fe8b62, type: 3}
+  - {fileID: 21300000, guid: a47469db6a158ca49a6d84b47f839c6d, type: 3}
+  - {fileID: 21300000, guid: a885481c8ee2b884c9f64801c0b8262e, type: 3}
+  - {fileID: 21300000, guid: c8584d8c247cbb44cb340c0edb801b3e, type: 3}
+  - {fileID: 21300000, guid: c3d9604db25390a468cd7b9c47f2d27b, type: 3}
+  - {fileID: 21300000, guid: f25d227e8554cb14d8a73a80c78803f0, type: 3}
+  - {fileID: 21300000, guid: 050870aeecbbe934884c86b8c119a77b, type: 3}
+  - {fileID: 21300000, guid: efc2cb6f8cecd324d846a2c15a4f3c15, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - selector_point
+  - center_3_bonus_full
+  - Button_text_play_esp_v2
+  - forward_arrow
+  - vecteezy_outer-space-with-alien-planets-and-explosion_12861851
+  - Button_image_tutorial_v2
+  - center_no_bonus
+  - Button_text_play_eng_v2
+  - forward_arrow_crystal
+  - selected_ship
+  - Button_text_exitlevel_esp
+  - Button_text_exitlevel_eng
+  - Button_buy_esp_v2
+  - Button_image_garage_v2
+  - Button_select_eng_v2
+  - exit
+  - Button_back_v2
+  - Button_buy_eng_v2
+  - Button_image_info_v2
+  - Button_select_esp_v2
+  - garage_parameter_tick
+  - 2352
+  - Button_setup1_v2
+  - back_button
+  - center_2_bonus_glow
+  - garage_parameter_background
+  - select_level_background
+  - right_edge_in_game_ui2
+  - dialog_background
+  - left_in_game_ui3
+  - backward_arrow
+  - left_edge_in_game_ui2
+  - button_background_squared
+  - vecteezy_outer-space-background-with-planets-and-explosion_13455536
+  - center_1_bonus
+  m_RenderDataMap: {}
+  m_Tag: MainUI
+  m_IsVariant: 0

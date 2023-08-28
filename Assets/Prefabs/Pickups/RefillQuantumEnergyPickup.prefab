@@ -7,6 +7,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3653904934340101235, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 08b84c39e82e2354597db682e1cdac6b,
+        type: 3}
+    - target: {fileID: 3653904934340101235, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4534626729792296058, guid: 36c276cdf789d814cb71947fa6c63a9a,
         type: 3}
       propertyPath: m_RootOrder
@@ -86,7 +97,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9ab161c61fc2b2a4bb590fbdccff65f1,
+      objectReference: {fileID: 21300000, guid: 08b84c39e82e2354597db682e1cdac6b,
         type: 3}
     - target: {fileID: 4534626729792296061, guid: 36c276cdf789d814cb71947fa6c63a9a,
         type: 3}
@@ -98,24 +109,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: RefillQuantumEnergyPickup
       objectReference: {fileID: 0}
+    - target: {fileID: 6567021014371820504, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_Name
+      value: RefillQuantumEnergyPickup
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36c276cdf789d814cb71947fa6c63a9a, type: 3}
---- !u!1 &9166003741969778188 stripped
+--- !u!1 &1943492335520723370 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4534626729792296062, guid: 36c276cdf789d814cb71947fa6c63a9a,
+  m_CorrespondingSourceObject: {fileID: 6567021014371820504, guid: 36c276cdf789d814cb71947fa6c63a9a,
     type: 3}
   m_PrefabInstance: {fileID: 4745128430746489458}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7329429681823128489
+--- !u!114 &2063342037025266015
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9166003741969778188}
+  m_GameObject: {fileID: 1943492335520723370}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9762bf3285807744ea2678dc96b20139, type: 3}
+  m_Script: {fileID: 11500000, guid: d6feb2605d04eda45b5e4a3b95b1ff4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QuantumEnergyAmount: 1000
+  PickupEffectDelay: 0.3
+  PercentageAmount: 0.5

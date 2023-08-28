@@ -7,6 +7,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3653904934340101235, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 8.181818
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653904934340101235, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 6.818182
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653904934340101235, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 55cc71011183e174496caf848aaf4d84,
+        type: 3}
+    - target: {fileID: 3653904934340101235, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4534626729792296058, guid: 36c276cdf789d814cb71947fa6c63a9a,
         type: 3}
       propertyPath: m_RootOrder
@@ -88,28 +109,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: RandomPickup
       objectReference: {fileID: 0}
+    - target: {fileID: 6567021014371820504, guid: 36c276cdf789d814cb71947fa6c63a9a,
+        type: 3}
+      propertyPath: m_Name
+      value: RandomPickup
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36c276cdf789d814cb71947fa6c63a9a, type: 3}
---- !u!1 &646002213101088404 stripped
+--- !u!1 &7871038406961862962 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4534626729792296062, guid: 36c276cdf789d814cb71947fa6c63a9a,
+  m_CorrespondingSourceObject: {fileID: 6567021014371820504, guid: 36c276cdf789d814cb71947fa6c63a9a,
     type: 3}
   m_PrefabInstance: {fileID: 3898205686919822058}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6622623117763704796
+--- !u!114 &8323028116780320497
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 646002213101088404}
+  m_GameObject: {fileID: 7871038406961862962}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36c0bc67c7d957445b07ab054d467c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PickupEffectDelay: 0.3
   pickupsList:
-  - {fileID: 7247022719478227238, guid: f0723754bac4c9c49a1184eb0048b39c, type: 3}
-  - {fileID: 8035237004447886828, guid: 80d5e668efc9d2a4e96eec36068f53a1, type: 3}
-  - {fileID: 1382158927228469857, guid: 39eb690b0a96423418c8cc91b109c601, type: 3}
-  - {fileID: 9166003741969778188, guid: fc4d96cd28dae224ba44fb1045881aaa, type: 3}
+  - {fileID: 98548032286873216, guid: 25ffa6b554678d14dbf4e9f3ad03b49c, type: 3}
+  - {fileID: 98548032286873216, guid: f0723754bac4c9c49a1184eb0048b39c, type: 3}
+  - {fileID: 1943492335520723370, guid: fc4d96cd28dae224ba44fb1045881aaa, type: 3}
+  - {fileID: 742638011503221322, guid: 80d5e668efc9d2a4e96eec36068f53a1, type: 3}
+  - {fileID: 8566671216129881543, guid: 39eb690b0a96423418c8cc91b109c601, type: 3}

@@ -139,7 +139,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 708de83ae652a084eab15d960551415e, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -189,52 +189,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cf878a3cbb3384994bb377b2cbb668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 59.99
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 60
-      value: 40
-      inSlope: 0.00063521834
-      outSlope: -0.28564286
-      tangentMode: 65
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.1401012
-    - serializedVersion: 3
-      time: 200
-      value: 0.01
-      inSlope: -0.28564286
-      outSlope: 0
-      tangentMode: 5
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  gravityFieldsParameters: {fileID: 11400000, guid: 56a3f7e48596dca4db6b17f3601af4b6,
+    type: 2}
   radius: 60
   distance: 200
   debugObject: {fileID: 933945291924030375}
   orbitDivisions: 11
+  speedCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &4456213129192602349
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,9 +211,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8918757233502605373}
   - component: {fileID: 4915891077746817307}
-  - component: {fileID: 5252088683342444779}
   - component: {fileID: 8603031768808007442}
-  - component: {fileID: 8840196226329222481}
+  - component: {fileID: 8132786703505690736}
   m_Layer: 7
   m_Name: Surface
   m_TagString: Planet
@@ -264,8 +229,8 @@ Transform:
   m_GameObject: {fileID: 4456213129192602349}
   m_LocalRotation: {x: -0, y: -0, z: 0.93553656, w: 0.35322994}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 28.5, y: 28.5, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5043029894549235946}
   m_RootOrder: 2
@@ -311,7 +276,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 055921e907a566b4b824f1bd62f5c144, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -319,120 +284,9 @@ SpriteRenderer:
   m_Size: {x: 3.97, y: 3.97}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &5252088683342444779
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4456213129192602349}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.133333, y: 4.114286}
-    newSize: {x: 3.97, y: 3.97}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.0761905, y: -1.7619048}
-      - {x: 1.0714287, y: -1.704762}
-      - {x: 1.0619048, y: -1.6857144}
-      - {x: 1.3285714, y: -1.552381}
-      - {x: 1.4476191, y: -1.4857143}
-      - {x: 1.6285715, y: -1.3761905}
-      - {x: 1.7476192, y: -1.2952381}
-      - {x: 1.8380953, y: -1.2238096}
-      - {x: 1.8571429, y: -1.1761905}
-      - {x: 1.8952382, y: -0.9571429}
-      - {x: 2.0190477, y: -0.7047619}
-      - {x: 2.052381, y: -0.50476193}
-      - {x: 2.0666668, y: -0.33333334}
-      - {x: 2.0666668, y: -0.023809524}
-      - {x: 2.061905, y: 0.08095238}
-      - {x: 2.0333333, y: 0.26190478}
-      - {x: 1.9952382, y: 0.33809525}
-      - {x: 2.0666668, y: 0.41428572}
-      - {x: 2.052381, y: 0.4809524}
-      - {x: 2.0142858, y: 0.5761905}
-      - {x: 2.0333333, y: 0.70000005}
-      - {x: 1.9952382, y: 0.7571429}
-      - {x: 1.7142857, y: 1.1238096}
-      - {x: 1.2714286, y: 1.6952381}
-      - {x: 1.2476192, y: 1.7190477}
-      - {x: 1.1142857, y: 1.7190477}
-      - {x: 1.0714287, y: 1.752381}
-      - {x: 0.99047625, y: 1.8000001}
-      - {x: 0.7761905, y: 1.9142858}
-      - {x: 0.5761905, y: 1.9809525}
-      - {x: 0.42857143, y: 1.9666667}
-      - {x: 0.32380953, y: 2.0142858}
-      - {x: 0.21904762, y: 2.057143}
-      - {x: 0.18571429, y: 2.057143}
-      - {x: 0.09047619, y: 2.0285716}
-      - {x: -0.18571429, y: 1.9476191}
-      - {x: -0.50476193, y: 1.8428572}
-      - {x: -1.0190476, y: 1.7571429}
-      - {x: -1.0285715, y: 1.7380953}
-      - {x: -1.052381, y: 1.7}
-      - {x: -1.0952381, y: 1.5952382}
-      - {x: -1.1428572, y: 1.5761906}
-      - {x: -1.3333334, y: 1.4904763}
-      - {x: -1.3714286, y: 1.4428571}
-      - {x: -1.6952381, y: 0.9476191}
-      - {x: -1.9714286, y: 0.53333336}
-      - {x: -2.0142858, y: 0.4666667}
-      - {x: -2.0190477, y: 0.44761905}
-      - {x: -1.9809525, y: 0.42380953}
-      - {x: -2.0666668, y: 0.37142858}
-      - {x: -2.0666668, y: 0.1}
-      - {x: -2.057143, y: -0.20476191}
-      - {x: -2.052381, y: -0.35238096}
-      - {x: -2.047619, y: -0.4666667}
-      - {x: -1.9761906, y: -0.5857143}
-      - {x: -1.9666667, y: -0.6333334}
-      - {x: -1.9476191, y: -0.73333335}
-      - {x: -1.9000001, y: -0.8666667}
-      - {x: -1.8000001, y: -1.0571429}
-      - {x: -1.7285715, y: -1.152381}
-      - {x: -1.6285715, y: -1.2714286}
-      - {x: -1.5857143, y: -1.304762}
-      - {x: -1.5476191, y: -1.3285714}
-      - {x: -1.5333334, y: -1.352381}
-      - {x: -1.5809524, y: -1.4047619}
-      - {x: -1.5761906, y: -1.4238095}
-      - {x: -1.4857143, y: -1.5095239}
-      - {x: -1.4238095, y: -1.557143}
-      - {x: -1.2952381, y: -1.6619048}
-      - {x: -1.1952381, y: -1.7238096}
-      - {x: -1.1238096, y: -1.7714286}
-      - {x: -0.9047619, y: -1.8809525}
-      - {x: -0.8904762, y: -1.8809525}
-      - {x: -0.8619048, y: -1.852381}
-      - {x: -0.75238097, y: -1.8952382}
-      - {x: -0.71904767, y: -1.9714286}
-      - {x: -0.7047619, y: -1.9857143}
-      - {x: -0.2857143, y: -1.9857143}
-      - {x: -0.2857143, y: -1.9952382}
-      - {x: 0.13333334, y: -1.9952382}
-      - {x: 0.17142858, y: -2.057143}
-      - {x: 0.21904762, y: -2.057143}
-      - {x: 0.23809525, y: -2.052381}
-      - {x: 0.5619048, y: -1.9857143}
-      - {x: 0.82857144, y: -1.8904762}
-      - {x: 1.0333334, y: -1.7952381}
 --- !u!114 &8603031768808007442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: febbf1f371363474587392c694965418, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8840196226329222481
+--- !u!114 &8132786703505690736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -454,7 +308,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4456213129192602349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccef19645a9317a4d9fc5f934412f044, type: 3}
+  m_Script: {fileID: 11500000, guid: b14f70eefb6706346a1671d4bafece27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5043029894549235950
@@ -466,7 +320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5043029894549235946}
-  - component: {fileID: 2056908376}
+  - component: {fileID: 4473837934601216539}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Planet
@@ -492,7 +346,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2056908376
+--- !u!114 &4473837934601216539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -501,29 +355,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 5043029894549235950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e410d41ab421faf459c76cb5dbdec2d7, type: 3}
+  m_Script: {fileID: 11500000, guid: b063a3174a47d964d81c17e8a54552fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Radius: 57
-  Sprite: {fileID: 21300000, guid: 055921e907a566b4b824f1bd62f5c144, type: 3}
-  EditCurves: 0
-  MinimumOrbitSpeed: 0.01
-  MaximumOrbitSpeed: 25
-  MaximumDistance: 197.56
-  OrbitDivisions: 12
-  DivisionCurveSlope: 276.8
-  prototype: {fileID: 8167821977281715850, guid: 5a95ae02189b1fc4eb2b85630d47100a,
-    type: 3}
-  satellites:
-  - PlanetRadiusOrbit: 188.6
-    InitialAngle: 102
-    Speed: 0.15
-    Size: 2.5
-    RotationSpeed: -180
-    Prefab: {fileID: 0}
-  - PlanetRadiusOrbit: 113.1
-    InitialAngle: 197
-    Speed: -0.15
-    Size: 2.5
-    RotationSpeed: 180
-    Prefab: {fileID: 0}
+  setup:
+    Radius: 0
+    Sprite: {fileID: 0}
+    EditCurves: 0
+    MinimumOrbitSpeed: 0
+    MaximumOrbitSpeed: 0
+    MaximumDistance: 0
+    OrbitDivisions: 0
+    DivisionCurveSlope: 0
+    satellites: []
