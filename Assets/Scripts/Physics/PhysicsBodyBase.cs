@@ -194,22 +194,18 @@ public class PhysicsBodyBase : IPhysicsBody
 
     public void Update(float diffTime)
     {
+        PreUpdatePosition();
         UpdatePosition(diffTime);
+        PreUpdateRotation();
         UpdateRotation(diffTime);
+        PostUpdate();
     }
 
     public void FixedUpdate(float diffTime)
     {
-        
-        PreUpdate();
         ComputeLinearVelocity(diffTime);
         PreComputeAngularVelocity();
         ComputeAngularVelocity(diffTime);
-        PreUpdatePosition();        
-        //UpdatePosition(diffTime);
-        PreUpdateRotation();
-        //UpdateRotation(diffTime);
-        PostUpdate();
     }
 
     protected virtual void PreUpdate()
@@ -281,7 +277,7 @@ public class PhysicsBodyBase : IPhysicsBody
 
     private void UpdateRotation(float diffTime)
     {
-        if (LinearSpeed < 0.1f || freeze)
+        if (LinearVelocity.magnitude < 0.1f || freeze)
         {
             return;
         }

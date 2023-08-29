@@ -950,9 +950,9 @@
       <Project>{6AE9E534-8777-A415-A429-4933BA61C27C}</Project>
       <Name>Unity.2D.Common.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Testingo.csproj">
-      <Project>{9C794727-DA5E-010F-BE62-81454B649381}</Project>
-      <Name>Testingo</Name>
+    <ProjectReference Include="spacequest.global.csproj">
+      <Project>{24F3C9A8-9028-825D-49C6-E573CCACCF33}</Project>
+      <Name>spacequest.global</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Splines.csproj">
       <Project>{49B35D07-4A4E-CEF3-E0D7-82ED76F29A76}</Project>

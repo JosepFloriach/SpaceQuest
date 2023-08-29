@@ -37,7 +37,6 @@ public class VerticalThruster : MonoBehaviour, IForce1D
         Direction = cockpit.Transform.up * currentPower;
         cockpit.AddLinearForce("VerticalThruster", this);
         currentThrusterNormalizedBackward = 0.0f;
-        //Debug.Log(Direction);
     }
 
     public void AddNegative(IPhysicsBody cockpit, float maxPower, float diffPerThrust)

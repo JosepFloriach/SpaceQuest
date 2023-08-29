@@ -14,7 +14,6 @@ public class LevelSelector : MonoBehaviour
     [SerializeField] private GameObject gems;
     [SerializeField] private Button button;
     [SerializeField] private Image planetImage;
-    [SerializeField] private LevelDataCollection gameData;
     [SerializeField] private float normalizedSplinePosition;
 
     private LevelProgressController levelProgressController;
@@ -49,7 +48,7 @@ public class LevelSelector : MonoBehaviour
         sceneLoader = FindObjectOfType<SceneLoader>();
         splineNavigator = FindObjectOfType<SplineNavigator>();
         levelProgressController = FindObjectOfType<LevelProgressController>();
-        ReferenceValidator.NotNull(gems, button, planetImage, gameData, levelProgressController, sceneLoader, splineNavigator);
+        ReferenceValidator.NotNull(gems, button, planetImage, levelProgressController, sceneLoader, splineNavigator);
     }
 
     private void Start()

@@ -5,14 +5,13 @@ using UnityEngine;
 public class GemsUIController : MonoBehaviour
 {
     [SerializeField] TMPro.TextMeshProUGUI countText;
-    [SerializeField] LevelDataCollection progressData;
 
     private CurrencyController currencyController;
 
     private void Awake()
     {
         currencyController = FindObjectOfType<CurrencyController>();
-        ReferenceValidator.NotNull(countText, progressData, currencyController);
+        ReferenceValidator.NotNull(countText, currencyController);
     }
 
     private void Update()

@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    [SerializeField] LevelDataCollection progress;
-
     private string sceneName;
 
     private void Start()
